@@ -1,7 +1,7 @@
 import { Box, Container, Heading, Image, Text } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import data from '../../vinos.json';
+import data from '../../../src/vinos.json';
 import Comprar from '../Botones/Comprar';
 import ItemCount from '../ItemCount'
 const ItemDetailContent = () => {
