@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#body{
+    background-color: #fffffd;
+    
+}
+
+header{
+    background-color: #212529;
+    height: 120px;
+    margin-bottom: 50px;
+
+}
+
+.divGral{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.linkDecoration{
+    text-decoration: none;
+}

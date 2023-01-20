@@ -1,0 +1,152 @@
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Unbounded', cursive;
+    color: #FFFFFC;
+    
+}
+
+.title2{
+    font-size: 1.3rem;
+    font-family: 'Unbounded', cursive;
+    color: #FFFFFC;
+    align-self: center;
+    text-decoration: none;
+    
+}
+
+.navBar{
+    margin: 10px;
+    align-items: center;
+}
+
+.listNav{
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFC;
+    text-decoration: none;
+}
+
+.listNav:hover{
+    transition: 0.2s;
+    color: #68B684;
+    cursor: pointer;
+}
+
+.imgLogo{
+    width: 80px;
+list-style: none;
+margin: 10px;
+}
+
+.carritoNavBar{
+    width: 38px;
+    display: flex;
+    justify-content: end;
+}
+
+.divCarritoNav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto
+}
+
+.carritoNotificacion{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #68B684;
+    border:solid ;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin: 5px
+    ;
+    
+
+}
+
+.AgregarContador{
+    margin: 0;
+}
+
+.cardVinos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardIimg{
+    width: 300px;
+}
+
+.footer{
+    background-color: #857c8d;
+    height: 100px;
+}
+
+.bodyHome{
+    background-image: url("../src/assets/botellas-vino.jpg");
+}
+
+.input{
+    border: solid 1px #68b684;
+    margin-left: 10px;
+    width: 250px;
+}
+
+.labelform{
+    width: 200px;
+}
+
+.divForm{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-self: center;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.botonFrom{
+    border: solid 3px #857c8d;
+    border-radius: 10px;
+    margin: 10px;
+    align-self: center;
+    background-color: #68b684;
+    color: #FFFFFC;
+    text-align: center;
+    height: 45px;
+}
+
+.home{
+    background-image: url("../src/assets/botellas-vino.jpg");
+    background-size: cover;
+    transform: translate(0,-10px);
+    height: 100vh;
+    margin: 0;
+}
+
+.bienvenidos{
+    color: #fffffc;
+    text-shadow: #857d8c 5px 5px;
+    background-color: rgb(16, 0, 7, 0.2) ;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-weight: 100;
+    text-align: center;
+
+}
