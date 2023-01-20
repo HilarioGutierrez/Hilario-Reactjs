@@ -14,7 +14,7 @@ const ItemDetailContent = () => {
   return (
     <Container display='flex' flexDirection='column'>
       <Heading alignSelf='center'>{vino.nombre}</Heading>
-      <Image className='imgDetail' alignSelf='center' src={`../${vino.img}`} width={60}></Image>
+      <Image className='imgDetail' alignSelf='center' src={`${vino.img}`} width={60}></Image>
       <Text alignSelf='center'>{vino.descripcion}</Text>
       <Text fontWeight='bold' fontSize='2rem' marginRight='3'>{`$${vino.precio}`}</Text>
       <Box display='flex' flexDirection='column' margin='2' >
