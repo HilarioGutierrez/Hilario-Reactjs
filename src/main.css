@@ -1,20 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     
-}
-
-#body{
-    background-color: #fffffd;
-    
-}
-
-header{
-    background-color: #212529;
-    height: 120px;
-    margin-bottom: 50px;
-
 }
 
 .divGral{
@@ -26,3 +14,4 @@ header{
 .linkDecoration{
     text-decoration: none;
 }
+

@@ -1,17 +1,17 @@
 import { Box, Heading } from "@chakra-ui/react"
 import axios from "axios"
 import { Navigate, Route, Routes } from "react-router-dom"
-import ItemDetailContent from "../ItemDetail/ItemDetailContent"
-import Card from "../Tarjetas/Card"
-import Formulario from "../Formulario/Formulario"
+import Formulario from "../Form/Formulario"
 import { useEffect, useState } from "react"
+import ItemListContainer from "../ItemListCointainer/ItemListContainer"
+import ItemDetailConteiner from "../ItemDetailContainer/ItemDetailConteiner"
 
 const Index = () => {
   //variable que guarda petision a datos JSON x axios
   const [vinos, setVinos] = useState([])
   const vinosJson = () => {
     axios
-      .get('/src/vinos.json') // hace peticion a api o json de datos
+      .get('/vinos.json') // hace peticion a api o json de datos
       .then((res) => setVinos(res.data)) // obtiene respuesta y la muestra 
       .catch((err) => console.log(err)) // si hay un error en peticion arroja por consola el error
   }
@@ -35,11 +35,11 @@ const Index = () => {
             <Box display='flex' flexDirection='row' flexWrap='wrap' justifyContent='center'>
               {vinos.map(vino => { // se hace .map al State,en este caso "vinos"
                 return (
-                  <Card key={vino.id} vino={vino} />) // componetizamos la card y le pasamos prop para poder pasarle el mapeo. la porp es el nombre que pasamos entre ({}) en el componente
+                  <ItemListContainer key={vino.id} vino={vino} />) // componetizamos la card y le pasamos prop para poder pasarle el mapeo. la porp es el nombre que pasamos entre ({}) en el componente
               })}
             </Box>
           </Box>} />
-        <Route path='/todos los vinos/:name' element={<ItemDetailContent />} />
+        <Route path='/todos los vinos/:name' element={<ItemDetailConteiner />} />
 
 
         <Route path='/tintos' element={
@@ -49,12 +49,12 @@ const Index = () => {
               {vinos.map(vino => {
                 if (vino.categoria === "tinto")
                   return (
-                    <Card key={vino.id} vino={vino} />)
+                    <ItemListContainer key={vino.id} vino={vino} />)
               })}
             </Box>
           </Box>
         } />
-        <Route path='/tintos/:name' element={<ItemDetailContent />} />
+        <Route path='/tintos/:name' element={<ItemDetailConteiner />} />
 
         <Route path='/blancos' element={
           <Box>
@@ -63,12 +63,12 @@ const Index = () => {
               {vinos.map(vino => {
                 if (vino.categoria === "blanco")
                   return (
-                    <Card key={vino.id} vino={vino} />)
+                    <ItemListContainer key={vino.id} vino={vino} />)
               })}
             </Box>
           </Box>
         } />
-        <Route path='/blancos/:name' element={<ItemDetailContent />} />
+        <Route path='/blancos/:name' element={<ItemDetailConteiner />} />
 
         <Route path='/rosados' element={
           <Box>
@@ -77,12 +77,12 @@ const Index = () => {
               {vinos.map(vino => {
                 if (vino.categoria === "rosado")
                   return (
-                    <Card key={vino.id} vino={vino} />)
+                    <ItemListContainer key={vino.id} vino={vino} />)
               })}
             </Box>
           </Box>
         } />
-        <Route path='/rosados/:name' element={<ItemDetailContent />} />
+        <Route path='/rosados/:name' element={<ItemDetailConteiner />} />
 
         <Route path='/champagne' element={
           <Box>
@@ -91,12 +91,12 @@ const Index = () => {
               {vinos.map(vino => {
                 if (vino.categoria === "champagne")
                   return (
-                    <Card key={vino.id} vino={vino} />)
+                    <ItemListContainer key={vino.id} vino={vino} />)
               })}
             </Box>
           </Box>
         } />
-        <Route path='/champagne/:name' element={<ItemDetailContent />} />
+        <Route path='/champagne/:name' element={<ItemDetailConteiner />} />
 
         <Route path='/contacto' element={
           <Formulario />}

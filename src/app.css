@@ -1,9 +1,12 @@
+
 .title{
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
     font-family: 'Unbounded', cursive;
     color: #FFFFFC;
+    background-color:#212529 ;
+    margin: 0px;
     
 }
 
@@ -13,7 +16,6 @@
     color: #FFFFFC;
     align-self: center;
     text-decoration: none;
-    
 }
 
 .navBar{
@@ -149,4 +151,24 @@ margin: 10px;
     font-weight: 100;
     text-align: center;
 
+}
+
+.panel-dark{
+    background-color: #857c8d;
+    color: #fffffc;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-light{
+    background-color: #68b684;
+    color: #fffffc;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
