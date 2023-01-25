@@ -172,3 +172,8 @@ margin: 10px;
     justify-content: center;
     align-items: center;
 }
+
+.selected{
+    color: #68b684;
+    font-weight: bold;
+}

@@ -5,6 +5,7 @@ import Formulario from "../Form/Formulario"
 import { useEffect, useState } from "react"
 import ItemListContainer from "../ItemListCointainer/ItemListContainer"
 import ItemDetailConteiner from "../ItemDetailContainer/ItemDetailConteiner"
+import Swal from "sweetalert2"
 
 const Index = () => {
   //variable que guarda petision a datos JSON x axios
@@ -104,7 +105,7 @@ const Index = () => {
 
         <Route path='/carrito' element={
           <Heading display='flex' justifyContent='center' alignItems='center' height='80vh'>NO TIENE PRODUCTOS EN EL CARRITO</Heading>
-        }/>
+        } />
 
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
