@@ -1,8 +1,8 @@
 import { Box } from '@chakra-ui/react'
 import Footer from './components/Footer/Footer';
 import './app.css';
-import Index from './components/Rutas/Index';
-import Navbar from './components/Navbar';
+import Rutas from './components/Rutas/Index';
+import Navbar from './components/NavBar/Navbar';
 // import Confirm18 from './components/Confirm+18/Confirm18';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <Box className="App">
       {/* <Confirm18/> */}
       <Navbar />
-      <Index />
+      <Rutas />
       <Footer />
     </Box>
   )

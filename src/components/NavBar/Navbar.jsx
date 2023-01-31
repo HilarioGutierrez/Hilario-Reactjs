@@ -1,8 +1,8 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "../app.css";
-import CartWidget from "./Cart/CartWidget";
+import "../../app.css";
+import CartWidget from "../Cart/CartWidget";
 
 // --->componente NavBar con list de opciones clickeables para navegar en el e-comerce<---
 const Navbar = () => {

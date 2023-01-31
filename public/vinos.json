@@ -8,7 +8,8 @@
         "precio": 13470,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/vistalba-corte-a_vutx2i.jpg",
         "categoria": "tinto",
-        "descripcion": "Color rojo granate intenso. Aroma muy complejos, se destacan las ciruelas rojas maduras y duraznos orejones desecados. También aparecen notas especiadas como nuez moscada y pimienta. De su paso por madera encontramos notas de vainilla y cacao. En boca con mucha estructura y volumen. Se destaca la presencia de frutas rojas. Final agradable y persistente."
+        "descripcion": "Color rojo granate intenso. Aroma muy complejos, se destacan las ciruelas rojas maduras y duraznos orejones desecados. También aparecen notas especiadas como nuez moscada y pimienta. De su paso por madera encontramos notas de vainilla y cacao. En boca con mucha estructura y volumen. Se destaca la presencia de frutas rojas. Final agradable y persistente.",
+        "stock": 200
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "precio": 4500,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/tomero-single-vineyard-malbec_ql6fun.jpg",
         "categoria": "tinto",
-        "descripcion": "Color rojo violáceo intenso con reflejos negruzcos. Aroma frutas rojas frescas se destacan las ciruelas. Aparecen notas mentoladas , vainilla y chocolate blanco. En boca entrada dulce, taninos sedosos. De buena acidez, vibrante. Excelente estructura con final persistente y amable."
+        "descripcion": "Color rojo violáceo intenso con reflejos negruzcos. Aroma frutas rojas frescas se destacan las ciruelas. Aparecen notas mentoladas , vainilla y chocolate blanco. En boca entrada dulce, taninos sedosos. De buena acidez, vibrante. Excelente estructura con final persistente y amable.",
+        "stock": 56
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "precio": 12000,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/tomero-cuartel-41-malbec_qhduvw.jpg",
         "categoria": "tinto",
-        "descripcion": "Color rojo negruzco, con destello violáceos. Aroma en nariz se perciben aromas de fruta negra, algo floral, y un toque herbal, acomplejado por su larga crianza en roble francés que le aporta complejas notas especiadas. En boca de gran estructura, fresco, pero al mismo tiempo se perciben taninos de muy buena textura y final dulce."
+        "descripcion": "Color rojo negruzco, con destello violáceos. Aroma en nariz se perciben aromas de fruta negra, algo floral, y un toque herbal, acomplejado por su larga crianza en roble francés que le aporta complejas notas especiadas. En boca de gran estructura, fresco, pero al mismo tiempo se perciben taninos de muy buena textura y final dulce.",
+        "stock":66
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "precio": 2900,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/anaia-gran-cabernet-sauvignon_vin8eh.jpg",
         "categoria": "tinto",
-        "descripcion": "Nuestro Gran Cabernet Sauvignon, es homenaje a este espectacular suelo de Agrelo. De gran intensidad y volumen, amplio y amable es criado durante 12 meses en cubas de roble francés que aportan notas complejas que se fusionan con la mejor expresión del Cabernet de Agrelo."
+        "descripcion": "Nuestro Gran Cabernet Sauvignon, es homenaje a este espectacular suelo de Agrelo. De gran intensidad y volumen, amplio y amable es criado durante 12 meses en cubas de roble francés que aportan notas complejas que se fusionan con la mejor expresión del Cabernet de Agrelo.",
+        "stock":120
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "precio": 15000,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179468/React%20JS/montes-alpha-special-cabernet-sauvignon_ylt9e9.jpg",
         "categoria": "tinto",
-        "descripcion": "La nariz compleja ofrece aromas sobresalientes de frutas negras maduras como higos y moras complementadas con notas de crema de cassis, mientras que las especias como la pimienta de cayena aparecen en un contexto de chocolate negro, que envuelve magistralmente aromas sutiles de cuero y tabaco. En boca con taninos perfectamente redondeados que desencadenan una explosión de la fruta en el paladar medio."
+        "descripcion": "La nariz compleja ofrece aromas sobresalientes de frutas negras maduras como higos y moras complementadas con notas de crema de cassis, mientras que las especias como la pimienta de cayena aparecen en un contexto de chocolate negro, que envuelve magistralmente aromas sutiles de cuero y tabaco. En boca con taninos perfectamente redondeados que desencadenan una explosión de la fruta en el paladar medio.",
+        "stock":40
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "precio": 2099,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/tomero-cabernet-franc_wrd9su.jpg",
         "categoria": "tinto",
-        "descripcion": "Con la incorporación de Juan Pablo Murgia como nuevo chief winemaker, Vistalba se suma a la góndola de los franc con un tinto elaborado con uvas de Agrelo. Se trata de Franc súper frutal, fresco y jugoso. Una incorporación para no perderse y aun precio difícil de encontrar entre los varietales de este cepaje estrella de la vitivinicultura local."
+        "descripcion": "Con la incorporación de Juan Pablo Murgia como nuevo chief winemaker, Vistalba se suma a la góndola de los franc con un tinto elaborado con uvas de Agrelo. Se trata de Franc súper frutal, fresco y jugoso. Una incorporación para no perderse y aun precio difícil de encontrar entre los varietales de este cepaje estrella de la vitivinicultura local.",
+        "stock":100
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "precio": 6650,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/salentein-reserve-pinot-noir_ck4zuw.jpg",
         "categoria": "tinto",
-        "descripcion": "Color rojo rubí brillante de intensidad media. Es un vino fragante y explosivo en nariz, donde sobresalen aromas a frutos, tales como cerezas, fresas y frambuesas, descriptores típicos del Pinot Noir cultivado en las zonas altas del Valle de Uco. En boca presenta una entrada dulce, se destacan la sedosidad de sus taninos así como la frescura de su equilibrada acidez. Aparecen las notas frutales antes mencionadas combinada con notas a vainilla aportadas por su paso por roble francés."
+        "descripcion": "Color rojo rubí brillante de intensidad media. Es un vino fragante y explosivo en nariz, donde sobresalen aromas a frutos, tales como cerezas, fresas y frambuesas, descriptores típicos del Pinot Noir cultivado en las zonas altas del Valle de Uco. En boca presenta una entrada dulce, se destacan la sedosidad de sus taninos así como la frescura de su equilibrada acidez. Aparecen las notas frutales antes mencionadas combinada con notas a vainilla aportadas por su paso por roble francés.",
+        "stock":24
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "precio": 5700,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/septima-gran-reserva-10_jdwlxx.jpg",
         "categoria": "tinto",
-        "descripcion": "En nariz conviven los esperados frutos rojos maduros, algunos trazos florales que no fueron doblegados por el roble y toques de caramelo y ahumados. Al paladar se presenta amplio, con buena cremosidad y con despliegue de notas especiadas. Sus 12 meses de estiba en botella no fueron en vano: hay taninos firmes pero perfectamente evolucionados. El cierre es a toda orquesta, potenciado por la fruta y las notas propias de la madera. Es un vino que, sin dudas, encontrará adeptos por su elegancia y su perfil concreto y definido, que conjuga cuerpo y estructura pero sin dejar de ser un Malbec que se presta al disfrute."
+        "descripcion": "En nariz conviven los esperados frutos rojos maduros, algunos trazos florales que no fueron doblegados por el roble y toques de caramelo y ahumados. Al paladar se presenta amplio, con buena cremosidad y con despliegue de notas especiadas. Sus 12 meses de estiba en botella no fueron en vano: hay taninos firmes pero perfectamente evolucionados. El cierre es a toda orquesta, potenciado por la fruta y las notas propias de la madera. Es un vino que, sin dudas, encontrará adeptos por su elegancia y su perfil concreto y definido, que conjuga cuerpo y estructura pero sin dejar de ser un Malbec que se presta al disfrute.",
+        "stock":9
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "precio": 20300,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/salentein-san-pablo-estate-chardonnay_al3z7h.jpg",
         "categoria": "blanco",
-        "descripcion": "Se destaca por la intensidad y complejidad de sus aromas. En boca es elegante y sabroso, con una mineralidad calcárea que lo hace fresco y persistente. ."
+        "descripcion": "Se destaca por la intensidad y complejidad de sus aromas. En boca es elegante y sabroso, con una mineralidad calcárea que lo hace fresco y persistente. .",
+        "stock":3
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
         "precio": 3250,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/septima-obra-pinot-noir_svd8yy.jpg",
         "categoria": "tinto",
-        "descripcion": "Cepas nobles de calidad de las mejores zonas vitivinícolas de Mendoza. Crianza dada por pasos por distintas barricas y guarda en botella de acuerdo a cada añada y cepa. Para Séptima Obra cosechamos la uva en los mejores terruños mendocinos de Luján de Cuyo y Valle de Uco: Agrelo, Gualtallary, Agua Amarga, Los Chacayes, Vistaflores, La Consulta y Paraje Altamira. Vista: Color rojo rubí brillante. Nariz: Aromas a fruta roja intensa que recuerda a cerezas y frutillas, con notas leves de vainilla y regaliz provenientes de su crianza en madera. Boca: Vino equilibrado y sedoso, de gran frescura y fluidez, con una sensación de frutos rojos típicos de la variedad y leves notas de chocolate y coco, provenientes de su contacto con el roble. Final largo y complejo. "
+        "descripcion": "Cepas nobles de calidad de las mejores zonas vitivinícolas de Mendoza. Crianza dada por pasos por distintas barricas y guarda en botella de acuerdo a cada añada y cepa. Para Séptima Obra cosechamos la uva en los mejores terruños mendocinos de Luján de Cuyo y Valle de Uco: Agrelo, Gualtallary, Agua Amarga, Los Chacayes, Vistaflores, La Consulta y Paraje Altamira. Vista: Color rojo rubí brillante. Nariz: Aromas a fruta roja intensa que recuerda a cerezas y frutillas, con notas leves de vainilla y regaliz provenientes de su crianza en madera. Boca: Vino equilibrado y sedoso, de gran frescura y fluidez, con una sensación de frutos rojos típicos de la variedad y leves notas de chocolate y coco, provenientes de su contacto con el roble. Final largo y complejo. ",
+        "stock":32
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
         "precio": 3030,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179468/React%20JS/laborum-single-vineyard_yfhrti.jpg",
         "categoria": "blanco",
-        "descripcion": "Laborum, del trabajo, es nuestra línea emblema. Es nuestra búsqueda de la expresión genuina de Cafayate. Laborum es la expresión varietal de Cafayate. Es el reflejo del trabajo, la custodia en viñedo y la integración en Bodega, que dan como resultado estos varietales con un enfoque artesanal y genuino. Que nos ofrecen la tan particular experiencia de los vinos que expresan todo el carácter de su origen. Laborum, nuestra huella de Cafayate en el mundo. Su composición de varietales muestra lo mejor del terroir de Cafayate y la línea esta compuesta por vinos que provienen de viñedos de muy bajo rendimiento (6 tn/ha)."
+        "descripcion": "Laborum, del trabajo, es nuestra línea emblema. Es nuestra búsqueda de la expresión genuina de Cafayate. Laborum es la expresión varietal de Cafayate. Es el reflejo del trabajo, la custodia en viñedo y la integración en Bodega, que dan como resultado estos varietales con un enfoque artesanal y genuino. Que nos ofrecen la tan particular experiencia de los vinos que expresan todo el carácter de su origen. Laborum, nuestra huella de Cafayate en el mundo. Su composición de varietales muestra lo mejor del terroir de Cafayate y la línea esta compuesta por vinos que provienen de viñedos de muy bajo rendimiento (6 tn/ha).",
+        "stock":150
     },
     {
         "id": 12,
@@ -129,7 +140,8 @@
         "precio": 2100,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/anaia-sauvignon-blanc_sau8dl.jpg",
         "categoria": "blanco",
-        "descripcion": "Nuestro Sauvignon Blanc es un vino cítrico, fresco, brillante. Representa la franqueza y la transparencia que nos llevaron a creer en las bondades de esta tierra. Es de color amarillo vibrante, con aromas verdes frescos y a ruda."
+        "descripcion": "Nuestro Sauvignon Blanc es un vino cítrico, fresco, brillante. Representa la franqueza y la transparencia que nos llevaron a creer en las bondades de esta tierra. Es de color amarillo vibrante, con aromas verdes frescos y a ruda.",
+        "stock":46
     },
     {
         "id": 13,
@@ -140,7 +152,8 @@
         "precio": 7350,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/salentain-reserva-cabernet-sauvignon_kpd8wg.jpg",
         "categoria": "tinto",
-        "descripcion": "En nariz, es intenso y complejo con aromas sobresalientes de frutas rojas, bayas negras, así como delicadas notas florales. En boca, su entrada es dulce y suave. Es un vino afrutado y fresco con buena intensidad. En la boca del medio, es ancho con un final persistente."
+        "descripcion": "En nariz, es intenso y complejo con aromas sobresalientes de frutas rojas, bayas negras, así como delicadas notas florales. En boca, su entrada es dulce y suave. Es un vino afrutado y fresco con buena intensidad. En la boca del medio, es ancho con un final persistente.",
+        "stock":55
     },
     {
         "id": 14,
@@ -151,7 +164,8 @@
         "precio": 1500,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/septima-cabernet-franc_lelzca.jpg",
         "categoria": "tinto",
-        "descripcion": "Color rojo con reflejos purpuras intensos.Expresivo y de gran tipicidad, despiertan los sentidos sus notas a fruta negra fresca, hierbas, pimienta blanca y ajíes verdes, amalgamados con sutiles aromas a clavo, canela y vainilla que aporta su paso por madera y que realzan las fragancias del Cabernet Franc. Fresco, amable, vivaz, con taninos sedosos y dulces que se perciben amigables en el paladar expresando su redondez. Sabores a especias y frutas que se funden con elegantes notas que recuerdan a finas hierbas, dando un vino sabroso, de larga persistencia y consistente de principio a fin. Maridaje ideal para Carnes con mayor tenor graso como ojo de bife y quesos cheddar o brie."
+        "descripcion": "Color rojo con reflejos purpuras intensos.Expresivo y de gran tipicidad, despiertan los sentidos sus notas a fruta negra fresca, hierbas, pimienta blanca y ajíes verdes, amalgamados con sutiles aromas a clavo, canela y vainilla que aporta su paso por madera y que realzan las fragancias del Cabernet Franc. Fresco, amable, vivaz, con taninos sedosos y dulces que se perciben amigables en el paladar expresando su redondez. Sabores a especias y frutas que se funden con elegantes notas que recuerdan a finas hierbas, dando un vino sabroso, de larga persistencia y consistente de principio a fin. Maridaje ideal para Carnes con mayor tenor graso como ojo de bife y quesos cheddar o brie.",
+        "stock":12
     },
     {
         "id": 15,
@@ -162,7 +176,8 @@
         "precio": 2100,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/anaia-ros%C3%A9-malbec_pjtjoj.jpg",
         "categoria": "rosado",
-        "descripcion": "El impactante perfil de la cordillera, el agua de deshielo, bañando sutilmente la tierra, es el paisaje y el alma de Anaia, el lugar de Los Andes, el sitio elegido. Nuestro Malbec Rosé es un vino claro, fresco y a la vez elegante. Representa la amabilidad que nos llevo a elegir Luján de Cuyo como nuestra casa. De color rosa pálido con matices salmón. Presenta aromas a frutos rojos recién cortados y una acidez vibrante que da lugar a un paladar untuoso y elegante."
+        "descripcion": "El impactante perfil de la cordillera, el agua de deshielo, bañando sutilmente la tierra, es el paisaje y el alma de Anaia, el lugar de Los Andes, el sitio elegido. Nuestro Malbec Rosé es un vino claro, fresco y a la vez elegante. Representa la amabilidad que nos llevo a elegir Luján de Cuyo como nuestra casa. De color rosa pálido con matices salmón. Presenta aromas a frutos rojos recién cortados y una acidez vibrante que da lugar a un paladar untuoso y elegante.",
+        "stock":24
     },
     {
         "id": 16,
@@ -173,7 +188,8 @@
         "precio": 3080,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179468/React%20JS/las-perdices-ala-colorada_f0gthf.jpg",
         "categoria": "tinto",
-        "descripcion": "Estamos en constante movimiento, buscando ir más allá, rompiendo barreras, códigos y fronteras. Creamos esta línea porque nos gustan los vinos únicos, que transmiten nuestro espíritu aventurero. Ala Colorada es el reflejo de esta incansable exploración."
+        "descripcion": "Estamos en constante movimiento, buscando ir más allá, rompiendo barreras, códigos y fronteras. Creamos esta línea porque nos gustan los vinos únicos, que transmiten nuestro espíritu aventurero. Ala Colorada es el reflejo de esta incansable exploración.",
+        "stock":2
     },
     {
         "id": 17,
@@ -184,7 +200,8 @@
         "precio": 6499,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/tempus-alba-pleno-reserva-del-enologo_ivi0pa.jpg",
         "categoria": "tinto",
-        "descripcion": "Tempus Alba Pleno Reserva del Enologo es un blend de 95% Malbec y 5% Tempranillo. Estas uvas provienen de viñedos propios en Maipú y Tupungato. Con un intenso y profundo color rojo y con notas violetas, destacamos en este vino los aromas a frutos rojos con intensas notas de vainilla y chocolate aportadas por veinticuatro meses de crianza en barricas de roble de primer uso. De excelente estructura, con taninos maduros y larga persistencia en boca."
+        "descripcion": "Tempus Alba Pleno Reserva del Enologo es un blend de 95% Malbec y 5% Tempranillo. Estas uvas provienen de viñedos propios en Maipú y Tupungato. Con un intenso y profundo color rojo y con notas violetas, destacamos en este vino los aromas a frutos rojos con intensas notas de vainilla y chocolate aportadas por veinticuatro meses de crianza en barricas de roble de primer uso. De excelente estructura, con taninos maduros y larga persistencia en boca.",
+        "stock":3
     },
     {
         "id": 18,
@@ -195,7 +212,8 @@
         "precio": 2300,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179468/React%20JS/progenie-extra-brut-rose_f8dvj9.jpg",
         "categoria": "champagne",
-        "descripcion": "De color salmonado con delicados reflejos brillantes. Sus burbujas son muy pequeñas y persistentes con buena formación de corona. Se percibe fruta roja como las frutillas, frambuesas y cerezas que se entremezclan con ciertos aromas más complejos de panificación debido a su largo contacto con las lías. Tiene una entrada fresca y amable y su acidez muy equilibrada con el alcohol. Su textura es untuosa y cremosa. Posee muy buen cuerpo y un final que invita a seguir bebiendo."
+        "descripcion": "De color salmonado con delicados reflejos brillantes. Sus burbujas son muy pequeñas y persistentes con buena formación de corona. Se percibe fruta roja como las frutillas, frambuesas y cerezas que se entremezclan con ciertos aromas más complejos de panificación debido a su largo contacto con las lías. Tiene una entrada fresca y amable y su acidez muy equilibrada con el alcohol. Su textura es untuosa y cremosa. Posee muy buen cuerpo y un final que invita a seguir bebiendo.",
+        "stock":9
     },
     {
         "id": 19,
@@ -206,7 +224,8 @@
         "precio": 2300,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/progenie-extra-brut_vmgzu7.jpg",
         "categoria": "champagne",
-        "descripcion": "Vista: Color cobrizo claro, burbujas pequeñas, sostenidas. Nariz: Aromas de manzana roja, con notas de brioche tibio. Boca: Grato volumen, textura con peso. Limpia la boca con un final fresco."
+        "descripcion": "Vista: Color cobrizo claro, burbujas pequeñas, sostenidas. Nariz: Aromas de manzana roja, con notas de brioche tibio. Boca: Grato volumen, textura con peso. Limpia la boca con un final fresco.",
+        "stock":120
     },
     {
         "id": 20,
@@ -217,6 +236,7 @@
         "precio": 7000,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179468/React%20JS/progenie-brut-nature_f8tsmr.jpg",
         "categoria": "champagne",
-        "descripcion": "Vista: Color dorado intenso, con matices verdosos.Nariz: Aromas frutales. Levadura. Ligeras notas de crianza.Boca: Envolvente, sedoso, elegante, acidez muy equilibrada. Sensación de tostada tibia con manteca y miel. Final pleno y largo."
+        "descripcion": "Vista: Color dorado intenso, con matices verdosos.Nariz: Aromas frutales. Levadura. Ligeras notas de crianza.Boca: Envolvente, sedoso, elegante,    acidez muy equilibrada. Sensación de tostada tibia con manteca y miel. Final pleno y largo.",
+        "stock":12
     }
 ]

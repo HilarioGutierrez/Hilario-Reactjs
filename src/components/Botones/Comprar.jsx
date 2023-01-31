@@ -1,18 +1,19 @@
-import { Button } from "@chakra-ui/react"
+import { Button, Box } from "@chakra-ui/react"
 import Swal from "sweetalert2"
-import CartWidget from "../Cart/CartWidget"
-import { guardarCarritoStorage } from "../Storage/storage"
+import ItemDetailConteiner from "../ItemDetailContainer/ItemDetailConteiner"
 
 const Comprar = ({ vino, textBoton }) => {
     let carrito = []
 
     function agregarACarrito() {
-        
+
+        {
             carrito.push(vino.nombre)
             carrito.push(vino.bodega)
             carrito.push(vino.img)
             carrito.push(vino.precio)
-        
+        }
+
     }
 
     function agregarACarritoAlert() {
@@ -23,19 +24,17 @@ const Comprar = ({ vino, textBoton }) => {
             text: `Ha agregado al carrito ${vino.nombre}`,
             showConfirmButton: false,
             timer: 1800
-
-
         })
     }
 
     return (
-        <Button marginBottom={8} bgColor='#68b684' margin='5' textColor='#fffffc' _hover={{ bg: '#5f1e3b' }} onClick={() => {
-            agregarACarrito();
-            agregarACarritoAlert();
-            <CartWidget notificacion={2} />
-            guardarCarritoStorage(carrito)
-        }
-        }>{textBoton}</Button>
+        <>
+            <Box display='flex' flexDirection='row' justifyContent='center' alignItems='center'>
+                <Button marginBottom={8} bgColor='#68b684' margin='5' textColor='#fffffc' _hover={{ bg: '#5f1e3b' }} onClick={() => {
+                {<ItemDetailConteiner/>}
+                }}>{textBoton}</Button>
+            </Box>
+        </>
     )
 }
 
