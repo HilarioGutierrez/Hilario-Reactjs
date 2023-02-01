@@ -21,7 +21,7 @@ const Navbar = () => {
           </Button>
           {/* NavBar List / Categorys */}
           <Box className="collapse navbar-collapse flex justify-content-evenly" id="navbarNavAltMarkup">
-            <NavLink  to='/todos los vinos' className="listNav">Todos los Vinos</NavLink>
+            <NavLink  to='/todos-los-vinos' className="listNav">Todos los Vinos</NavLink>
             <NavLink to='/tintos' className="listNav">Tintos</NavLink>
             <NavLink to='/blancos' className="listNav">Blancos</NavLink>
             <NavLink to='/rosados' className="listNav">Rosados</NavLink>

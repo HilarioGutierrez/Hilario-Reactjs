@@ -21,7 +21,7 @@
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179470/React%20JS/tomero-single-vineyard-malbec_ql6fun.jpg",
         "categoria": "tinto",
         "descripcion": "Color rojo violáceo intenso con reflejos negruzcos. Aroma frutas rojas frescas se destacan las ciruelas. Aparecen notas mentoladas , vainilla y chocolate blanco. En boca entrada dulce, taninos sedosos. De buena acidez, vibrante. Excelente estructura con final persistente y amable.",
-        "stock": 56
+        "stock": 54
     },
     {
         "id": 3,
@@ -104,7 +104,7 @@
         "precio": 20300,
         "img": "https://res.cloudinary.com/dey3fcafu/image/upload/v1674179469/React%20JS/salentein-san-pablo-estate-chardonnay_al3z7h.jpg",
         "categoria": "blanco",
-        "descripcion": "Se destaca por la intensidad y complejidad de sus aromas. En boca es elegante y sabroso, con una mineralidad calcárea que lo hace fresco y persistente. .",
+        "descripcion": "Se destaca por la intensidad y complejidad de sus aromas. En boca es elegante y sabroso, con una mineralidad calcárea que lo hace fresco y persistente.",
         "stock":3
     },
     {

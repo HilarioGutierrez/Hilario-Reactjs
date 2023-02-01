@@ -5,7 +5,7 @@ import Formulario from "../Form/Formulario"
 import { useEffect, useState } from "react"
 import ItemListContainer from "../ItemListCointainer/ItemListContainer"
 import ItemDetailConteiner from "../ItemDetailContainer/ItemDetailConteiner"
-import Swal from "sweetalert2"
+//import Confirm18 from "../Confirm+18/Confirm18"
 
 const Rutas = () => {
   const [vinos, setVinos] = useState([])
@@ -27,10 +27,11 @@ const Rutas = () => {
         <Route path='/' element={
           <Heading className="home" display='flex' flexDirection='row' justifyContent='center' alignItems='center' height='100vh' fontSize='5rem' fontFamily={'Unbounded'}>
             <p className='bienvenidos' >Bienvenidos a Wayna Vinos</p>
+          {/* <Confirm18/> */}
           </Heading>
         } />
 
-        <Route path='/todos los vinos' element={
+        <Route path='/todos-los-vinos' element={
           <Box>
             <Heading fontFamily='Ubuntu' fontStyle='italic' fontSize='2.3rem' padding='30px' >Todos nuestros vinos</Heading>
             <Box display='flex' flexDirection='row' flexWrap='wrap' justifyContent='center'>
@@ -40,7 +41,7 @@ const Rutas = () => {
               })}
             </Box>
           </Box>} />
-        <Route path='/todos los vinos/:name' element={<ItemDetailConteiner />} />
+        <Route path='/todos-los-vinos/:name' element={<ItemDetailConteiner />} />
 
 
         <Route path='/tintos' element={
@@ -106,6 +107,9 @@ const Rutas = () => {
         <Route path='/carrito' element={
           <Heading display='flex' justifyContent='center' alignItems='center' height='80vh'>NO TIENE PRODUCTOS EN EL CARRITO</Heading>
         } />
+
+        <Route path='/terminar' element={<Heading>Compra finalizada</Heading>} />
+
 
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
