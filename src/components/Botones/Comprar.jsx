@@ -1,7 +1,9 @@
 import { Button, Box } from "@chakra-ui/react"
 
-const Comprar = ({ textBoton  }) => {
-
+const Comprar = ({ textBoton }) => {
+    const onAdd = (quantity) => {
+        console.log(`Comrpaste: ${quantity} unidades`);
+    }
     return (
         <>
             <Box display='flex' flexDirection='row' justifyContent='center' alignItems='center'>

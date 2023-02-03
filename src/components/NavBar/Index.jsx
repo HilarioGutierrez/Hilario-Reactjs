@@ -2,7 +2,7 @@ import { Box, Button, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../../app.css";
-import CartWidget from "../Cart/CartWidget";
+import CartWidget from "../CartWidget/Index";
 
 // --->componente NavBar con list de opciones clickeables para navegar en el e-comerce<---
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
           </Button>
           {/* NavBar List / Categorys */}
           <Box className="collapse navbar-collapse flex justify-content-evenly" id="navbarNavAltMarkup">
-            <NavLink  to='/todos-los-vinos' className="listNav">Todos los Vinos</NavLink>
+            <NavLink to='/todos-los-vinos' className="listNav">Todos los Vinos</NavLink>
             <NavLink to='/tintos' className="listNav">Tintos</NavLink>
             <NavLink to='/blancos' className="listNav">Blancos</NavLink>
             <NavLink to='/rosados' className="listNav">Rosados</NavLink>

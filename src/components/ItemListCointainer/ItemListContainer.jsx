@@ -1,9 +1,8 @@
 //import "src/app.css";
 
 import { Box, Container, Heading, Image, Text } from "@chakra-ui/react"
-import { Link, Route } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Comprar from "../Botones/Comprar"
-import ItemDetailConteiner from "../ItemDetailContainer/ItemDetailConteiner"
 import styles from './ItemListContainer.module.css'
 
 

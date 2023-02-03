@@ -11,10 +11,10 @@ const CartProvider = ({ children }) => {
 
     const addProduct = (item, newQuantity) => {
         const newCart = cart.filter(product => product.id !== item.id);
-        newCart.push({ ...item, quantity: newQuantity });
+        newCart.push({ ...item, cantidad: newQuantity });
         setCart(newCart);
     }
-console.log('carrito: ' + cart);
+console.log(`Carrito : ${JSON.stringify(cart)}`);
     return (
         <>
             <cartContext.Provider value={{
