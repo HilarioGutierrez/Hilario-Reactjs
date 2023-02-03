@@ -3,9 +3,9 @@ import { useContext } from 'react'
 import { dataContext } from '../../Context/DataContext'
 import Item from '../Item/Index'
 
+
 const ItemList = () => {
-    const {data} = useContext(dataContext)
-    console.log(data)
+    const { data } = useContext(dataContext)
 
     return (
 
