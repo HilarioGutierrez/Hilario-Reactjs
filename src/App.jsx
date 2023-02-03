@@ -33,8 +33,8 @@ function App() {
             <Route path='*' element={<Navigate to='/' />} />
           </Routes>
         </DataProvider>
-        <Footer />
       </CartProvider>
+        <Footer />
     </Box>
   )
 }

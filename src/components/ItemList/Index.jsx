@@ -5,6 +5,7 @@ import Item from '../Item/Index'
 
 const ItemList = () => {
     const {data} = useContext(dataContext)
+    console.log(data)
 
     return (
 
