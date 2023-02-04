@@ -1,0 +1,15 @@
+.linkDecoration{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nombreClick{
+    color: black;
+}
+
+.nombreClick :hover{
+    border: solid 1px #68b684;
+}

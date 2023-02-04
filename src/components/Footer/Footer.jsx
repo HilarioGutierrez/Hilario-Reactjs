@@ -5,7 +5,7 @@ const Footer = () => {
 
         <Box className={styles.footer} textColor='#fffffc' display='flex' flexDirection='column' alignItems='center' justifyContent='center'>
             <Container display='flex' flexDir='row' justifyContent='center'>
-                <i className="bi bi-c-circle me-2"></i><h5><span>2023</span> Hilario Gutierrez </h5>
+                <i className="bi bi-c-circle me-2"></i><h5>Hilario Gutierrez <span>2023</span></h5>
             </Container>
         </Box>
     )

@@ -1,35 +1,31 @@
-//import "src/app.css";
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import ItemList from '../ItemList/Index'
 
-import { Box, Container, Heading, Image, Text } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
-import Comprar from "../Botones/Comprar"
-import styles from './ItemListContainer.module.css'
+const ItemListContainer = () => {
+  const [data, setData] = useState([])
+  const dataJson = () => {
+    axios
+      .get('/vinos.json') // hace peticion a api o json de datos
+      .then((res) => setData(res.data)) // obtiene respuesta y la muestra 
+      .catch((err) => console.log(err)) // si hay un error en peticion arroja por consola el error
+  }
 
-
-const ItemListContainer = ({ vino }) => {
+  useEffect(() => { //Hay que importar el useEffect para que funcione
+    setTimeout(() => { dataJson() }, 1000)
+  }, []) // el UseEffect [] --> Para se ejecute cuando se monta el sitio. [prop1] --> En montaje y para cada cambio de la prop que se le de a State [prop1,prop2] --> Cuando cambia alguna de las 2 prop cambia el State
+  // en las props de useEffect tienen que ser states
+  //variable que guarda petision a datos JSON x axios
 
   return (
-    <Box marginBottom='20'>
-      {/* --->Tarjeta de cada vino<--- */}
-      <Box width={350} display='flex' flexDirection='row' flexWrap='wrap' margin='3' >
-        <Container width={300} height={550} border='2px' borderColor='green' borderRadius={50} display='flex' justifyContent='space-between' flexDirection='column' boxShadow='2xl'>
-          <Link to={`${vino.nombre}`} className={styles.linkDecoration} >
-            <Heading fontSize='1.3rem' marginTop='20px' className={styles.nombreClick} textAlign='center'>{vino.nombre}</Heading>
-            <Image src={vino.img} alt={`Botella de vino ${vino.nombre}`} alignSelf='center' width={100} />
-          </Link>
-          <Box display='flex' flexDirection='column' marginLeft='5'>
-            <Text fontSize="0.7rem" color='#857c8d'>Disponibles: {vino.stock}</Text>
-            <Heading fontSize='1rem' fontWeight='1rem' alignItems='center'><small>Bodega:</small> {vino.bodega}</Heading>
-            <Heading fontSize='0.8rem' fontWeight='0.8rem'>{vino.varietal}</Heading>
-            <Heading fontSize='0.7rem' fontWeight='0.7rem'>{vino.ano}</Heading>
-            <Text fontWeight='bold' alignSelf='end' fontSize='1.2rem'>${vino.precio}</Text>
-          </Box>
-          <Comprar vino={vino} textBoton='Agregar a carrito' />
-        </Container>
-      </Box>
-    </Box>
+    <>
+    <ItemList data={data}  />
+    </>
 
   )
 }
 
 export default ItemListContainer
+
+
+

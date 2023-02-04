@@ -1,22 +1,18 @@
 import { Box } from '@chakra-ui/react'
-import { useContext } from 'react'
-import { dataContext } from '../../Context/DataContext'
+import React from 'react'
 import Item from '../Item/Index'
-
-
-const ItemList = () => {
-    const { data } = useContext(dataContext)
-
-    return (
-
-        <Box display='flex' flexDirection='row' flexWrap='wrap' justifyContent='center'>
-            {
-                data.map(vino => <Item key={vino.id} productos={vino} />
-                )
-            }
-        </Box>
-
+const ItemList = ({data = []}) => {
+  return (
+    <>
+<Box display='flex' flexDirection='row' flexWrap='wrap' justifyContent='center'>
+{
+    data.map(vino => <Item key={vino.id} productos={vino} />
     )
+}
+
+</Box>
+    </>
+  )
 }
 
 export default ItemList

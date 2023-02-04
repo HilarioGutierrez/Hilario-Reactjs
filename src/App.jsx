@@ -6,17 +6,16 @@ import CartProvider from './Context/CartContext';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Index';
 import Formulario from './components/Form/Formulario';
-import DataProvider from './Context/DataContext';
-import ItemList from './components/ItemList/Index';
+import ItemListContainer from './components/ItemListCointainer/ItemListContainer';
+import ItemDetail from './components/ItemDetail/Index';
+import ItemDetailConteiner from './components/ItemDetailContainer/Index';
 
 function App() {
 
   return (
     <Box className="App">
       {/* Contexto de carrito */}
-      <CartProvider>
-        {/* Contexto de datos */}
-        <DataProvider>
+        <CartProvider>
           <Navbar />
           <Routes>
             {/* Ruta a la que te dirije cuando el browser esta en / */}
@@ -24,7 +23,8 @@ function App() {
               <Home title="Bienvenidos a Wayna vinos" />
             } />
             {/* Ruta a la que te dirije cuando el browser esta en /todos-los-vinos */}
-            <Route path='/todos-los-vinos' element={<ItemList />} />
+            <Route path='/todos-los-vinos' element={<ItemListContainer />} />
+            <Route path='/todos-los-vinos/:name' element={<ItemDetailConteiner />} />
             {/* Ruta a la que te dirije cuando el browser esta en /contacto */}
             <Route path='/contacto' element={
               <Formulario />}
@@ -32,9 +32,8 @@ function App() {
             {/* Cuando no se encuentra una ruta, el browser te direje a / */}
             <Route path='*' element={<Navigate to='/' />} />
           </Routes>
-        </DataProvider>
-      </CartProvider>
-        <Footer />
+        </CartProvider>
+      <Footer />
     </Box>
   )
 }

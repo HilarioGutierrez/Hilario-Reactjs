@@ -6,7 +6,6 @@ const Home = ({ title }) => {
         <>
             <Heading className="home" display='flex' flexDirection='row' justifyContent='center' alignItems='center' height='100vh' fontSize='5rem' fontFamily={'Unbounded'}>
                 <p className='bienvenidos' >{title}</p>
-                {/* <Confirm18/> */}
             </Heading></>
     )
 }
