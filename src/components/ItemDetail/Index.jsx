@@ -1,9 +1,5 @@
 import { Box, Heading, Image, Text } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { UseCartContext } from '../../Context/CartContext'
 import ItemCount from '../ItemCount/Index'
-import styles from './ItemDetail.module.css'
 
 const  ItemDetail = ({ data }) => {
 
@@ -34,6 +30,7 @@ const  ItemDetail = ({ data }) => {
       </Box>
     </Box>
   ) 
+  
 }
 
 export default ItemDetail
