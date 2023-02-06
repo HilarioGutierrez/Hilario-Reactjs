@@ -12,7 +12,7 @@ const ItemListContainer = () => {
   }
 
   useEffect(() => { //Hay que importar el useEffect para que funcione
-    setTimeout(() => { dataJson() }, 1000)
+    setTimeout(() => { dataJson() }, 2000)
   }, []) // el UseEffect [] --> Para se ejecute cuando se monta el sitio. [prop1] --> En montaje y para cada cambio de la prop que se le de a State [prop1,prop2] --> Cuando cambia alguna de las 2 prop cambia el State
   // en las props de useEffect tienen que ser states
   //variable que guarda petision a datos JSON x axios

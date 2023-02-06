@@ -9,7 +9,6 @@ const ItemList = ({data = []}) => {
     data.map(vino => <Item key={vino.id} productos={vino} />
     )
 }
-
 </Box>
     </>
   )
