@@ -1,17 +1,19 @@
-import { Box, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Heading, Image, Text } from '@chakra-ui/react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/Index'
+import styles from './ItemDetail.module.css'
+const ItemDetail = ({ data }) => {
 
-const  ItemDetail = ({ data }) => {
-
-  // const [goToCart, setGoToCart] = useState(false)
-  // const { addProduct } = UseCartContext()
+  const [terminarCompra, setTerminarCompra] = useState(false)
 
 
-  // const onAdd = (quantity) => {
-  //   setGoToCart(true);
-  //   addProduct(data, quantity)
-  //   // console.log(`Comrpaste: ${quantity} unidades`);
-  // }
+  const onAdd = (cantidad) => {
+    setTerminarCompra(true);
+
+    console.log(`Seleccionaste: ${cantidad} unidades`);
+
+  }
 
   return (
     <Box display='flex' flexDirection='column'>
@@ -21,16 +23,16 @@ const  ItemDetail = ({ data }) => {
       <Text width={500} alignSelf='center' fontStyle='italic'>{data.descripcion}</Text>
       <Text fontWeight='bold' fontSize='2rem' alignSelf='center' marginRight='3'>{`$${data.precio}`}</Text>
       <Box display='flex' flexDirection='row' alignSelf='center' margin='2' >
-        <ItemCount inicial={1} stock={data.stock} onAdd={''} />
-        {/* {
-            goToCart ? <Link to='/carrito'>Ver Carrito</Link> : 
-  
-          } */}
+
+        {
+        
+          terminarCompra ? <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link> : <ItemCount inicial={1} stock={data.stock} onAdd={onAdd} />  
+        }
 
       </Box>
     </Box>
-  ) 
-  
+  )
+
 }
 
 export default ItemDetail
