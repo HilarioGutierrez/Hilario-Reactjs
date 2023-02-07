@@ -6,19 +6,14 @@ import styles from '../ItemCount/itemCount.module.css'
 const ItemCount = ({ inicial, stock, onAdd }) => {
     const [contador, setContador] = useState(parseInt(inicial))
 
-    
-    const suma = () => {
-        setContador(contador + 1)
-    }
-    
-    const resta = () => {
-        setContador(contador - 1)
-    }
-    
+    const suma = () => { setContador(contador + 1) }
+
+    const resta = () => { setContador(contador - 1) }
+
     useEffect(() => {
         setContador(parseInt(inicial))
     }, [inicial])
-    
+
 
     return (
         <Box border='2px' display='flex' flexDirection='row' borderColor='#857c8d' justifyContent='space-around' margin='auto' borderRadius={10} padding={1} alignItems='center' >
@@ -28,8 +23,8 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                 <button className={styles.btnSuma} disabled={contador >= stock} onClick={suma}>+</button>
             </Box>
             <Box display='flex' flexDirection='row' justifyContent='center' alignItems='center'>
-                <Button marginBottom={8} bgColor='#68b684' margin='2' textColor='#fffffc' disabled={stock <= 0 && contador > stock} _disabled={{ bg: 'grey' }} _hover={{ bg: '#5f1e3b' }} onClick={() => onAdd(contador)}>Comprar</Button>
-                <Button marginBottom={2} bgColor='#857c8d' margin='2'  textColor='#fffffc' _hover={{ bg: '#5f1e3b' }} onClick={() => setContador(1)}>Borrar</Button>
+                <Button marginBottom={8} bgColor='#68b684' margin='2' textColor='#fffffc' disabled={stock <= 0 || contador > stock} _disabled={{ bg: 'grey' }} _hover={{ bg: '#5f1e3b' }} onClick={() => onAdd(contador)}>Comprar</Button>
+                <Button marginBottom={2} bgColor='#857c8d' margin='2' textColor='#fffffc' _hover={{ bg: '#5f1e3b' }} onClick={() => setContador(1)}>Borrar</Button>
             </Box>
         </Box>
     )

@@ -1,15 +1,18 @@
 import { Box, Button, Heading, Image, Text } from '@chakra-ui/react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { UseCartContext } from '../../Context/CartContext'
 import ItemCount from '../ItemCount/Index'
 import styles from './ItemDetail.module.css'
 const ItemDetail = ({ data }) => {
 
   const [terminarCompra, setTerminarCompra] = useState(false)
+  const { agregarProducto } = UseCartContext()
 
 
   const onAdd = (cantidad) => {
     setTerminarCompra(true);
+    agregarProducto(data, cantidad)
 
     console.log(`Seleccionaste: ${cantidad} unidades`);
 
@@ -25,8 +28,8 @@ const ItemDetail = ({ data }) => {
       <Box display='flex' flexDirection='row' alignSelf='center' margin='2' >
 
         {
-        
-          terminarCompra ? <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link> : <ItemCount inicial={1} stock={data.stock} onAdd={onAdd} />  
+
+          terminarCompra ? <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link> : <ItemCount inicial={0} stock={data.stock} onAdd={onAdd} />
         }
 
       </Box>
