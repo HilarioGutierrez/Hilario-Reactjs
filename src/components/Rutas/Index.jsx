@@ -7,6 +7,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Home from "../Home/Index"
 import Item from "../Item/Index"
+import Cart from "../Cart/Index"
 
 const Rutas = () => {
   const [data, setData] = useState([])
@@ -92,7 +93,7 @@ const Rutas = () => {
           <Formulario />} />
 
         <Route path='/carrito' element={
-          <Heading display='flex' justifyContent='center' alignItems='center' height='80vh'>NO TIENE PRODUCTOS EN EL CARRITO</Heading>} />
+          <Cart/>} />
 
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>

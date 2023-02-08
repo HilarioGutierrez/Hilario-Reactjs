@@ -5,34 +5,47 @@ export const UseCartContext = () => useContext(cartContext)
 const CartProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
 
-    const clearCart = () => setCart([]); // funcion para vaciar o limpiar el carrito
-    const isInCart = (id) => cart.find(product => product.id === id) ? true : false; //Funcion que busca id del product en el cart para no duplicarlo 
-    const removeCart = (id) => setCart(cart.filter(product => product.id !== id)); // Funcion que por filter arma un array con los productos que no tengan el id seleccionado. 
+    console.log(`Carrito : ${JSON.stringify(carrito.length)}`);
 
+    console.log(`Carrito : ${JSON.stringify(carrito)}`);
+    // funcion para vaciar o limpiar el carrito
+    const vaciarCarrito = () => setCarrito([]);
+    //Funcion que busca id del product en el cart para no duplicarlo 
+    const estaEnElCarrito = (id) => carrito.find(product => product.id === id) ? true : false;
+    // Funcion para remover productos del carrito
+    const eliminarProducto = (id) => setCarrito(carrito.filter(product => product.id !== id));
+    // Funcion que agrega productos al carrito
     const agregarProducto = (vino, cantidad) => {
         let nuevoCarrito;
         let productoEnCarrito = carrito.find(product => product.id === vino.id);
         if (productoEnCarrito) {
-            productoEnCarrito.cantidad = + cantidad;
+            productoEnCarrito.cantidad += cantidad;
             nuevoCarrito = [...carrito];
         } else {
             productoEnCarrito = { ...vino, cantidad: cantidad };
             nuevoCarrito = [...carrito, productoEnCarrito];
         }
         setCarrito(nuevoCarrito);
-        
-        console.log(`Carrito : ${JSON.stringify(carrito.length)}`);
-
-        console.log(`Carrito : ${JSON.stringify(carrito)}`);
+    }
+    // Funcion que suma el total de los productos del carrito
+    const total = () => {
+        return carrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
+    }
+// Funcion que suma la cantidad de productos del carrito
+    const productosCarrito = () => {
+        return carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
     }
 
     return (
         <>
             <cartContext.Provider value={{
-                clearCart,
-                isInCart,
-                removeCart,
-                agregarProducto
+                vaciarCarrito,
+                estaEnElCarrito,
+                eliminarProducto,
+                agregarProducto,
+                total,
+                productosCarrito,
+                carrito
             }}>
                 {children}
             </cartContext.Provider>
