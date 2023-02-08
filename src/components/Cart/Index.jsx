@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from '@chakra-ui/react'
+import { Box, Button, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { UseCartContext } from '../../Context/CartContext'
@@ -7,7 +7,7 @@ import ItemCart from '../Item/ItemCart'
 
 const Carrito = () => {
 
-  const { carrito } = UseCartContext()
+  const { carrito, total } = UseCartContext()
 
   if (carrito.length === 0) {
     return (
@@ -18,9 +18,11 @@ const Carrito = () => {
     )
   } else {
     return (
-      <>
+      <Box>
         {carrito.map((item) => <ItemCart key={item.id} item={item} />)}
-      </>
+        <hr />
+        <Heading fontSize='1.5rem' textAlign='end' padding={5} margin={3}>Total: ${total()}</Heading>
+      </Box>
     )
   }
 }

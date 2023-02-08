@@ -32,7 +32,7 @@ const CartProvider = ({ children }) => {
         return carrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
     }
 // Funcion que suma la cantidad de productos del carrito
-    const productosCarrito = () => {
+    const productosEnCarrito = () => {
         return carrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
     }
 
@@ -44,7 +44,7 @@ const CartProvider = ({ children }) => {
                 eliminarProducto,
                 agregarProducto,
                 total,
-                productosCarrito,
+                productosEnCarrito,
                 carrito
             }}>
                 {children}
