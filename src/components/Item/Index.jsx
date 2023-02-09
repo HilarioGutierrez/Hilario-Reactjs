@@ -22,7 +22,7 @@ const Item = ({ productos }) => {
             <Heading fontSize='0.7rem' fontWeight='0.7rem'>{productos.ano}</Heading>
             <Text fontWeight='bold' alignSelf='end' fontSize='1.2rem'>${productos.precio}</Text>
           </Box>
-          <Comprar vino={productos} textBoton='Agregar a carrito' />
+          <Comprar textBoton='Agregar a carrito' />
         </Container>
       </Box>
     </Box>

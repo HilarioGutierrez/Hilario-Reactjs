@@ -2,8 +2,8 @@ import { Box, Button, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { UseCartContext } from '../../Context/CartContext'
+import Comprar from '../Botones/Comprar'
 import ItemCart from '../Item/ItemCart'
-
 
 const Carrito = () => {
 
@@ -11,9 +11,10 @@ const Carrito = () => {
 
   if (carrito.length === 0) {
     return (
-      <Box display='flex' flexDirection='column' justifyContent='space-around' alignItems='center' height='80vh' >
-        <Heading> NO TIENE PRODUCTOS EN EL CARRITO </Heading>
-        <Link to='/'><Button>Volver al Home</Button> </Link>
+      <Box display='flex' flexDirection='column' justifyContent='space-around' alignItems='center' height='68vh' >
+        <Heading> NO TIENE PRODUCTOS EN EL CARRITO  </Heading>
+        <Text fontStyle='italic'>Por favor, agregue productos al carrito</Text>
+        <Link className='linkDecoration' to='/todos-los-vinos'><Comprar textBoton='Todos los vinos' /> </Link>
       </Box>
     )
   } else {

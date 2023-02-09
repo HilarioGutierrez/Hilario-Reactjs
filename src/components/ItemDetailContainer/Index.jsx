@@ -2,30 +2,32 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/Index'
+import { db } from '../../../db/firebase-config'
+import { collection, getDocs } from "firebase/firestore"
 
 const ItemDetailConteiner = () => {
-  const [data, setData] = useState({})
   const { name } = useParams()
 
-  const dataJson = () => {
-    axios
-      .get('../vinos.json') // hace peticion a api o json de datos
-      .then((res) => {
-        // obtenemos los datos
-        const data = res.data;
-        // filtramos por id
-        const dataFiltrada = data.find(el => el.nombre === name)
-        // actualizamos el estado con esa info
-        setData(dataFiltrada)
-      })
-      .catch((err) => console.log(err)) // si hay un error en peticion arroja por consola el error
+  //state que guarda datos de la coleccion de firebase
+  const [data, setData] = useState([])
+  //variable con coleccion de datos de firebase
+  const dataCollection = collection(db, "vinos")
+  //funcion que obtiene datos de firebase
+  const getData = async () => {
+    const querySnapshot = await getDocs(dataCollection);
+    //en 'docs' del objeto obtenido por getDocs se encuentran los datos de la coleccion. Por eso se utiliza .docs
+    const docs = querySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+    //buscar detail de producto por params
+    const dataFiltrada = docs.find(el => el.nombre === name)
+    //se actualiza el state con los datos obtenidos
+    setData(dataFiltrada)
   }
 
+  //se ejecuta solo si cambia el valor de name
   useEffect(() => {
-    dataJson()
-  }, 
-  //En los [] se le puede pasar una variable que se va a estar observando para que se ejecute el useEffect. en este caso es el name del useParams.
-  [name])
+    getData()
+  },
+    [name])
 
   return (
     <>

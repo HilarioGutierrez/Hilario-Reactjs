@@ -4,33 +4,43 @@ import Formulario from "../Form/Formulario"
 import ItemDetailConteiner from "../ItemDetailContainer/Index"
 import ItemList from "../ItemList/Index"
 import { useEffect, useState } from "react"
-import axios from "axios"
 import Home from "../Home/Index"
 import Item from "../Item/Index"
 import Cart from "../Cart/Index"
+import { db } from '../../../db/firebase-config'
+import { collection, getDocs } from "firebase/firestore"
 
 const Rutas = () => {
+  //state que guarda datos de la coleccion de firebase
   const [data, setData] = useState([])
-  const dataJson = () => {
-    axios
-      .get('/vinos.json') // hace peticion a api o json de datos
-      .then((res) => setData(res.data)) // obtiene respuesta y la muestra 
-      .catch((err) => console.log(err)) // si hay un error en peticion arroja por consola el error
+  //variable con coleccion de datos de firebase
+  const dataCollection = collection(db, "vinos")
+  //funcion que obtiene datos de firebase
+  const getData = async () => {
+    const querySnapshot = await getDocs(dataCollection);
+    //en 'docs' del objeto obtenido por getDocs se encuentran los datos de la coleccion. Por eso se utiliza .docs
+    const docs = querySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+    //se actualiza el state con los datos obtenidos
+    setData(docs)
   }
 
-  useEffect(() => { //Hay que importar el useEffect para que funcione
-    setTimeout(() => { dataJson() },)
-  }, []) // el UseEffect [] --> Para se ejecute cuando se monta el sitio. [prop1] --> En montaje y para cada cambio de la prop que se le de a State [prop1,prop2] --> Cuando cambia alguna de las 2 prop cambia el State
-  // en las props de useEffect tienen que ser states
-  //variable que guarda petision a datos JSON x axios
+  useEffect(() => {
+    getData()
+  }, [])
+
   return (
     <>
       <Routes>
         <Route path='/' element={
           <Home title="Bienvenidos a Wayna vinos" />
         } />
-        <Route path='/todos-los-vinos' element={<ItemList data={data}  />
-} />
+
+        <Route path='/todos-los-vinos' element={
+          <Box>
+            <Heading fontFamily='Ubuntu' fontStyle='italic' fontSize='2.3rem' padding='30px' >Nuestros vinos</Heading>
+            <ItemList data={data} />
+          </Box>
+        } />
         <Route path='/todos-los-vinos/:name' element={<ItemDetailConteiner />} />
 
         <Route path='/tintos' element={
@@ -93,7 +103,7 @@ const Rutas = () => {
           <Formulario />} />
 
         <Route path='/carrito' element={
-          <Cart/>} />
+          <Cart />} />
 
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>
