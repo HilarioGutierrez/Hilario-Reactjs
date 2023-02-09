@@ -9,8 +9,11 @@ import Item from "../Item/Index"
 import Cart from "../Cart/Index"
 import { db } from '../../../db/firebase-config'
 import { collection, getDocs } from "firebase/firestore"
+import Loading from "../Loading/Loading"
 
 const Rutas = () => {
+  // state Loading
+  const [loading, setLoading] = useState(true)
   //state que guarda datos de la coleccion de firebase
   const [data, setData] = useState([])
   //variable con coleccion de datos de firebase
@@ -22,11 +25,22 @@ const Rutas = () => {
     const docs = querySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
     //se actualiza el state con los datos obtenidos
     setData(docs)
+    setLoading(false)
   }
+
 
   useEffect(() => {
     getData()
   }, [])
+
+
+  if (loading) {
+    return (
+      <Box display='flex' justifyContent='center' marginTop='100' width='300'>
+        <Loading />
+      </Box>
+    )
+  }
 
   return (
     <>
@@ -41,7 +55,7 @@ const Rutas = () => {
             <ItemList data={data} />
           </Box>
         } />
-        <Route path='/todos-los-vinos/:name' element={<ItemDetailConteiner />} />
+        <Route path='/todos-los-vinos/:id' element={<ItemDetailConteiner />} />
 
         <Route path='/tintos' element={
           <Box>
@@ -55,7 +69,7 @@ const Rutas = () => {
             </Box>
           </Box>
         } />
-        <Route path='/tintos/:name' element={<ItemDetailConteiner />} />
+        <Route path='/tintos/:id' element={<ItemDetailConteiner />} />
 
         <Route path='/blancos' element={
           <Box>
@@ -69,7 +83,7 @@ const Rutas = () => {
             </Box>
           </Box>
         } />
-        <Route path='/blancos/:name' element={<ItemDetailConteiner />} />
+        <Route path='/blancos/:id' element={<ItemDetailConteiner />} />
 
         <Route path='/rosados' element={
           <Box>
@@ -83,7 +97,7 @@ const Rutas = () => {
             </Box>
           </Box>
         } />
-        <Route path='/rosados/:name' element={<ItemDetailConteiner />} />
+        <Route path='/rosados/:id' element={<ItemDetailConteiner />} />
 
         <Route path='/champagne' element={
           <Box>
@@ -97,7 +111,7 @@ const Rutas = () => {
             </Box>
           </Box>
         } />
-        <Route path='/champagne/:name' element={<ItemDetailConteiner />} />
+        <Route path='/champagne/:id' element={<ItemDetailConteiner />} />
 
         <Route path='/contacto' element={
           <Formulario />} />

@@ -11,7 +11,7 @@ const Item = ({ productos }) => {
       {/* --->Tarjeta de cada vino<--- */}
       <Box width={350} display='flex' flexDirection='row' flexWrap='wrap' margin='3' >
         <Container width={300} height={550} border='2px' borderColor='green' borderRadius={50} display='flex' justifyContent='space-between' flexDirection='column' boxShadow='2xl'>
-          <Link to={`/todos-los-vinos/${productos.nombre}`} className={styles.linkDecoration} >
+          <Link to={`${productos.id}`} className={styles.linkDecoration} >
             <Heading fontSize='1.3rem' marginTop='20px' className={styles.nombreClick} textAlign='center'>{productos.nombre}</Heading>
             <Image src={productos.img} alt={`Botella de vino ${productos.nombre}`} alignSelf='center' width={100} />
           </Link>

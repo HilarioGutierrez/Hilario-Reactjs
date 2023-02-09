@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { UseCartContext } from '../../Context/CartContext'
 import ItemCount from '../ItemCount/Index'
 import styles from './ItemDetail.module.css'
+
 const ItemDetail = ({ data }) => {
 
   const [terminarCompra, setTerminarCompra] = useState(false)
@@ -13,9 +14,7 @@ const ItemDetail = ({ data }) => {
   const onAdd = (cantidad) => {
     setTerminarCompra(true);
     agregarProducto(data, cantidad)
-
     console.log(`Seleccionaste: ${cantidad} unidades`);
-
   }
 
   return (
@@ -26,12 +25,9 @@ const ItemDetail = ({ data }) => {
       <Text width={500} alignSelf='center' fontStyle='italic'>{data.descripcion}</Text>
       <Text fontWeight='bold' fontSize='2rem' alignSelf='center' marginRight='3'>{`$${data.precio}`}</Text>
       <Box display='flex' flexDirection='row' alignSelf='center' margin='2' >
-
         {
-
           terminarCompra ? <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link> : <ItemCount inicial={0} stock={data.stock} onAdd={onAdd} />
         }
-
       </Box>
     </Box>
   )
