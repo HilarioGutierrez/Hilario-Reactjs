@@ -26,7 +26,12 @@ const ItemDetail = ({ data }) => {
       <Text fontWeight='bold' fontSize='2rem' alignSelf='center' marginRight='3'>{`$${data.precio}`}</Text>
       <Box display='flex' flexDirection='row' alignSelf='center' margin='2' >
         {
-          terminarCompra ? <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link> : <ItemCount inicial={0} stock={data.stock} onAdd={onAdd} />
+          terminarCompra ?
+            <Box>
+              <Link to='/carrito' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Ir a Carrito</Button></Link>
+              <Link to='/todos-los-vinos' className={styles.linkDecoration}><Button className={styles.btnACarrito}>Seguir Comprando</Button></Link>
+            </Box> :
+            <ItemCount inicial={0} stock={data.stock} onAdd={onAdd} />
         }
       </Box>
     </Box>

@@ -28,12 +28,11 @@ const Rutas = () => {
     setLoading(false)
   }
 
-
   useEffect(() => {
     getData()
   }, [])
 
-
+//condicional para mostrar loading mientras se obtienen los datos de firebase
   if (loading) {
     return (
       <Box display='flex' justifyContent='center' marginTop='100' width='300'>

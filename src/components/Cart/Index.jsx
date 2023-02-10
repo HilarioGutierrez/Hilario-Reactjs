@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { UseCartContext } from '../../Context/CartContext'

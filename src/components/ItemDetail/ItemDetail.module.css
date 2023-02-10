@@ -15,11 +15,10 @@
 }
 
 .btnACarrito {
-    background-color: #fffffc;
+    background-color: black;
     color: #5f1e3b;
     border: 2px solid #5f1e3b;
     border-radius: 20%;
     text-decoration: none;
     margin-bottom: 20px;
 }
-
