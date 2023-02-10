@@ -9,6 +9,16 @@ const Carrito = () => {
 
   const { carrito, total } = UseCartContext()
 
+  const order= {
+    buyer: {
+      nombre:'',
+      email:'',
+      telefono:'',
+    },
+    items: carrito.map(item => ({id: item.id, nombre: item.nombre, precio: item.precio, cantidad: item.cantidad})),
+    total: total
+  }
+
   if (carrito.length === 0) {
     return (
       <Box display='flex' flexDirection='column' justifyContent='space-around' alignItems='center' height='68vh' >
