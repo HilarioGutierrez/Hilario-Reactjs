@@ -10,6 +10,7 @@ import Cart from "../Cart/Index"
 import { db } from '../../../db/firebase-config'
 import { collection, getDocs } from "firebase/firestore"
 import Loading from "../Loading/Loading"
+import Checkout from "../Checkout/Index"
 
 const Rutas = () => {
   // state Loading
@@ -117,6 +118,8 @@ const Rutas = () => {
 
         <Route path='/carrito' element={
           <Cart />} />
+
+          <Route path='/checkout' element={<Checkout />} />
 
         <Route path='*' element={<Navigate to='/' />} />
       </Routes>

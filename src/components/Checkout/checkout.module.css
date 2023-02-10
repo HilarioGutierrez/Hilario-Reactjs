@@ -1,0 +1,15 @@
+.label{
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.input{
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 50%;
+    max-width: 600px;
+    min-width: 200px;
+    margin: 20px 0px
+}
