@@ -3,7 +3,6 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
 import { UseCartContext } from '../../Context/CartContext'
-import Loading from '../Loading/Loading'
 import styles from './checkout.module.css'
 import ItemCheckout from './ItemCheckout'
 const Checkout = () => {
@@ -21,7 +20,6 @@ const Checkout = () => {
   const [email, setEmail] = useState('')
   const [confirmEmail, setConfirmEmail] = useState('')
   const [telefono, setTelefono] = useState('')
-  const [loading, setLoading] = useState(true)
 
   const order = {
     buyer: {
@@ -41,15 +39,6 @@ const Checkout = () => {
       .then(({ id }) =>
         validateEmail(id)
       );
-    setLoading(false);
-    //condicional para mostrar loading mientras se obtienen los datos de firebase
-    if (loading) {
-      return (
-        <Box display='flex' justifyContent='center' marginTop='100' width='300'>
-          <Loading />
-        </Box>
-      )
-    }
   }
   const validateEmail = (id) => {
     if (email !== confirmEmail) {
