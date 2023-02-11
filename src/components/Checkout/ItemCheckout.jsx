@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './checkout.module.css'
 const ItemCheckout = ({ item }) => {
     return (
-        <Box display='flex' flexDirection=' row' alignItems='center' justifyContent='center' margin={5}>
+        <Box display='flex' flexDirection=' row' alignItems='center' justifyContent='space-between' margin={5}>
             <Image className={styles.img} alt={item.nombre} src={item.img}></Image>
             <Box display='flex' flexDirection='column'>
                 <Heading fontSize='1rem' fontStyle='italic'>{item.nombre}</Heading>

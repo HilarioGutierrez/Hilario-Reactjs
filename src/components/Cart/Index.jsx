@@ -9,16 +9,6 @@ const Carrito = () => {
 
   const { carrito, total } = UseCartContext()
 
-  const order= {
-    buyer: {
-      nombre:'',
-      email:'',
-      telefono:'',
-    },
-    items: carrito.map(item => ({id: item.id, nombre: item.nombre, precio: item.precio, cantidad: item.cantidad})),
-    total: total
-  }
-
   if (carrito.length === 0) {
     return (
       <Box display='flex' flexDirection='column' justifyContent='space-around' alignItems='center' height='68vh' >
@@ -34,7 +24,7 @@ const Carrito = () => {
         <hr />
         <Box display='flex' flexDirection='column' alignItems='center'>
           <Heading fontSize='1.5rem' alignSelf='end' padding={5} margin={3}>Total: ${total()}</Heading>
-          <Link to='/checkout'><Button colorScheme='green' margin={3} padding={5} fontSize='1.2rem' width='80vw'>Finalizar compra</Button></Link>
+          <Link to='/checkout' className='linkDecoration'><Button colorScheme='green' margin={3} padding={5} fontSize='1.2rem' width='80vw'>Finalizar compra</Button></Link>
         </Box>
       </Box>
     )

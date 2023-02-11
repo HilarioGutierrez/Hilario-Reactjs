@@ -1,5 +1,6 @@
 .label{
     font-style: italic;
+    color: #5f1e3b;
     font-size: 1.2rem;
     font-weight: 600;
 
@@ -24,4 +25,12 @@
     padding: 10px;
     margin: 5px;
     font-weight: 200;
+}
+
+.form{
+display: flex;
+flex-direction: column;
+padding: 50px;
+width: 700px;
+
 }
