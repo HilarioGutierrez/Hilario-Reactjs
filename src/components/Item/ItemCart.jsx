@@ -8,10 +8,10 @@ const ItemCart = ({ item }) => {
 
   return (
     <>
-      <Box display='flex' flexDirection=' row' alignItems='center' justifyContent='space-between' margin={5}>
+      <Box display='flex' flexDirection={{base:'column', lg:'row'}} alignItems='center' justifyContent='space-between' margin={5}>
         <Image className={styles.img} alt={item.nombre} src={item.img}></Image>
         <Box display='flex' flexDirection='column'>
-        <Heading fontWeight='300' fontStyle='italic'>{item.nombre}</Heading>
+        <Heading fontWeight='300' padding={5} textAlign='center' fontStyle='italic'>{item.nombre}</Heading>
         <Box display='flex' flexDirection='row'>
           <Text className={styles.texto}>Precio unitario: ${item.precio}</Text>
           <Text className={styles.texto}>Cantidad: {item.cantidad}</Text>
