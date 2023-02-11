@@ -23,7 +23,7 @@ const ItemDetail = ({ data }) => {
       <Heading alignSelf='center' margin='25px'>{data.nombre}</Heading>
       <Image className='imgDetail' alignSelf='center' src={`${data.img}`} width={60}></Image>
       <Text fontSize="0.9rem" alignSelf='center' color='#857c8d'>Disponibles: {data.stock}</Text>
-      <Text width={500} alignSelf='center' fontStyle='italic'>{data.descripcion}</Text>
+      <Text width='auto' padding={5} alignSelf='center' fontStyle='italic'>{data.descripcion}</Text>
       <Text fontWeight='bold' fontSize='2rem' alignSelf='center' marginRight='3'>{`$${data.precio}`}</Text>
       <Box display='flex' flexDirection='row' alignSelf='center' margin='2' >
         {
