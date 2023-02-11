@@ -7,7 +7,9 @@ import ItemCart from '../Item/ItemCart'
 
 const Carrito = () => {
 
-  const { carrito, total } = UseCartContext()
+  const { carrito, total, guardarCarritoStorage } = UseCartContext()
+
+  guardarCarritoStorage(JSON.stringify(carrito))
 
   if (carrito.length === 0) {
     return (

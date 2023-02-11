@@ -5,16 +5,23 @@ import styles from './home.module.css'
 
 const Home = () => {
     return (
-        <Box display='flex' flexDirection='row' flexWrap='wrap' w={{sm:'320px',md:'768px',lg:'960px',xl:'100%' }} >
+        <Box display='flex' flexDirection='row' flexWrap='wrap' w={{ sm: '320px', md: '768px', lg: '960px', xl: '100%' }} >
 
-            <Box justifyContent='space-around' className="title" height='60vh' width='100vw'>
-                <Heading display="flex" flexWrap='wrap' flexDirection='column' fontSize='5rem' className="title">
+            <Box justifyContent='space-around' flexWrap='wrap' className="title" w={
+                {
+                    sm: '30em',
+                    md: '48em',
+                    lg: '62em',
+                    xl: '80em',
+                    '2xl': '96em',
+                }}>
+                <Heading display="flex" flexWrap='wrap' flexDirection='column' fontSize={{base: '2rem', md: '3.5rem', lg: '5rem'}} className="title">
                     <span className="title-word title-word-1">Bienvenidos</span>
                     <span className="title-word title-word-2">a</span>
                     <span className="title-word title-word-3">WAYNA</span>
                     <span className="title-word title-word-4">Vinos</span>
                 </Heading>
-                <Box display='flex' flexDirection='row' flexWrap='wrap' alignItems='center'>
+                <Box display='flex' flexDirection={{base:'column', md:'row'}} flexWrap='wrap' alignItems='center'>
                     <Link to='/tintos'>
                         <div className={styles.categoriaTinto}>
                         </div>

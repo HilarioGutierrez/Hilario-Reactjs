@@ -10,8 +10,9 @@ const ItemDetail = ({ data }) => {
   const [terminarCompra, setTerminarCompra] = useState(false)
   const { agregarProducto } = UseCartContext()
 
-
+  
   const onAdd = (cantidad) => {
+    
     setTerminarCompra(true);
     agregarProducto(data, cantidad)
     console.log(`Seleccionaste: ${cantidad} unidades`);

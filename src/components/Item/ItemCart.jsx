@@ -4,7 +4,7 @@ import { UseCartContext } from '../../Context/CartContext';
 
 const ItemCart = ({ item }) => {
 
-  const { eliminarProducto } = UseCartContext();
+  const { eliminarProducto , borrarStorage } = UseCartContext();
 
   return (
     <>
@@ -18,7 +18,7 @@ const ItemCart = ({ item }) => {
           <Text className={styles.texto}>Subtotal: ${item.cantidad * item.precio}</Text>
           </Box>
           </Box>
-        <Button bg='#5f1e3b' textColor='#fffffc' _hover={{bg: '#fffffc', textColor: '#5f1e3b', border:'2px solid #5f1e3b'}} onClick={() => eliminarProducto(item.id)}>Eliminar</Button>
+        <Button bg='#5f1e3b' textColor='#fffffc' _hover={{bg: '#fffffc', textColor: '#5f1e3b', border:'2px solid #5f1e3b'}} onClick={() => {eliminarProducto(item.id), borrarStorage(item.id) }}>Eliminar</Button>
         </Box>
     </>
   )
