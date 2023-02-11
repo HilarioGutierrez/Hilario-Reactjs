@@ -12,7 +12,7 @@ const Checkout = () => {
   //en este caso crea una coleccion llamada orders
   const orderCollection = collection(db, 'orders');
 
-  const { carrito, total } = UseCartContext()
+  const { carrito, total,setCarrito } = UseCartContext()
 
   //States para guardar los value de los inputs
   const [nombre, setNombre] = useState('')
@@ -60,13 +60,15 @@ const Checkout = () => {
       setEmail('')
       setConfirmEmail('')
       setTelefono('')
+      setCarrito([])
     }
   }
+
 
   return (
     <Box display='flex' flexDirection='column'>
       <Heading margin={3} fontFamily='Ubuntu' fontStyle='italic'>Datos del comprador</Heading>
-      <Box display='flex' flexDirection={{base:'column', lg:'row'}}  justifyContent='center'>
+      <Box display='flex' flexDirection={{ base: 'column', lg: 'row' }} justifyContent='center'>
         <form className={styles.form} onSubmit={(e) => {
           e.preventDefault();
           handleOrder();
@@ -82,7 +84,7 @@ const Checkout = () => {
           <label className={styles.label}>Telefono<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="tel" required placeholder=' 11 2222 3333' value={telefono} onChange={(e) => setTelefono(e.target.value)} />
           <small className={styles.small}>* Campo requerido de manera obligatoria</small>
-          <Button margin={3} w={{base:'80px',md:'100px', lg:'400px'}} colorScheme='green' type='submit' variant='solid'>Confirmar</Button>
+          <Button margin={3} w={{ base: '80px', md: '100px', lg: '400px' }} colorScheme='green' type='submit' variant='solid'>Confirmar</Button>
         </form>
         <Box margin={10} boxShadow='dark-lg' p='6' rounded='md' bg='white' border='4px' borderColor='#5f1e3b' borderRadius='10%'>
           <Heading margin={3} fontFamily='Ubuntu' fontSize='1.2rem' fontStyle='italic' color='#5f1e3b'>Resumen de compra:</Heading>

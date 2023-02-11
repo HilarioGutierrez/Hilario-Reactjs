@@ -64,6 +64,7 @@ const CartProvider = ({ children }) => {
                 guardarCarritoStorage,
                 obtenerCarritoStorage,
                 borrarStorage,
+                setCarrito,
                 carrito
             }}>
                 {children}

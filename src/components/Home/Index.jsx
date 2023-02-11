@@ -5,7 +5,7 @@ import styles from './home.module.css'
 
 const Home = () => {
     return (
-        <Box display='flex' flexDirection='row' flexWrap='wrap' w={{ sm: '100%', md: '100%', lg: '100%', xl: '100%' }} >
+        <Box display='flex' flexDirection='row' flexWrap='wrap' height='70vh' w={{ sm: '100%', md: '100%', lg: '100%', xl: '100%' }} >
 
             <Box justifyContent='space-around' flexWrap='wrap' className="title" w={
                 {
