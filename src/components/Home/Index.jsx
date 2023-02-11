@@ -15,13 +15,13 @@ const Home = () => {
                     xl: '80em',
                     '2xl': '96em',
                 }}>
-                <Heading display="flex" flexWrap='wrap' flexDirection='column' fontSize={{base: '2rem', md: '3.5rem', lg: '5rem'}} className="title">
+                <Heading display="flex" flexWrap='wrap' flexDirection='column' fontSize={{ base: '2rem', md: '3.5rem', lg: '5rem' }} className="title">
                     <span className="title-word title-word-1">Bienvenidos</span>
                     <span className="title-word title-word-2">a</span>
                     <span className="title-word title-word-3">WAYNA</span>
                     <span className="title-word title-word-4">Vinos</span>
                 </Heading>
-                <Box display='flex' flexDirection={{base:'column', md:'row'}} justifyContent='center' flexWrap='wrap' alignItems='center'>
+                <Box display='flex' flexDirection={{ base: 'column', md: 'row' }} justifyContent='center' flexWrap='wrap' alignItems='center'>
                     <Link to='/tintos'>
                         <div className={styles.categoriaTinto}>
                         </div>

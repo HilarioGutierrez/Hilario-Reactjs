@@ -38,17 +38,18 @@
 
 .categoriaTinto:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .categoriaBlanco:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .categoriaRosado:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .categoriaChampagne:hover{
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.8s;
 }
+

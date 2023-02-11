@@ -1,3 +1,4 @@
+
 import { Button, Box } from "@chakra-ui/react"
 
 const Comprar = ({ textBoton }) => {
