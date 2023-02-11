@@ -32,6 +32,8 @@ nav{
     font-family: 'Ubuntu', sans-serif;
     color: #FFFFFC;
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .listNav:hover{

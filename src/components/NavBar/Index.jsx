@@ -20,7 +20,7 @@ const Navbar = () => {
             <Text className="navbar-toggler-icon m-0"></Text>
           </Button>
           {/* NavBar List / Categorys */}
-          <Box className="collapse navbar-collapse flex justify-content-evenly" id="navbarNavAltMarkup">
+          <Box className="collapse navbar-collapse" id="navbarNavAltMarkup" display='felx'justifyContent='space-evenly' flexDirection={{base:'column',lg:'row'}}>
             <NavLink to='/todos-los-vinos' className="listNav">Todos los Vinos</NavLink>
             <NavLink to='/tintos' className="listNav">Tintos</NavLink>
             <NavLink to='/blancos' className="listNav">Blancos</NavLink>
