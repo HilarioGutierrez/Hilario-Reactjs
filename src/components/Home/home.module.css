@@ -1,0 +1,54 @@
+.categoriaTinto{
+    background-image: url("https://res.cloudinary.com/dey3fcafu/image/upload/v1676081957/React%20JS/vino-tinto_nyd68k.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    margin: 20px;
+    
+}
+
+
+.categoriaBlanco{
+    background-image: url("https://res.cloudinary.com/dey3fcafu/image/upload/v1676081956/React%20JS/vino-blanco_hzmyml.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+.categoriaRosado{
+    background-image: url("https://res.cloudinary.com/dey3fcafu/image/upload/v1676081960/React%20JS/vino-rosado_vj1dik.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+.categoriaChampagne{
+    background-image: url("https://res.cloudinary.com/dey3fcafu/image/upload/v1676081957/React%20JS/champagne_bye1bh.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    margin: 20px;
+}
+
+.categoriaTinto:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.categoriaBlanco:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.categoriaRosado:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.categoriaChampagne:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

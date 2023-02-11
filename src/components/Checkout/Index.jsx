@@ -55,6 +55,11 @@ const Checkout = () => {
         text: `Su numero de orden es: ${id}`,
         confirmButtonText: 'Aceptar',
       })
+      setNombre('')
+      setApellido('')
+      setEmail('')
+      setConfirmEmail('')
+      setTelefono('')
     }
   }
 
@@ -66,17 +71,18 @@ const Checkout = () => {
           e.preventDefault();
           handleOrder();
         }}>
-          <label className={styles.label}>Nombre</label>
+          <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='nombre' required placeholder=' Escriba su nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
-          <label className={styles.label}>Apellido</label>
+          <label className={styles.label}>Apellido<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='apellido' required placeholder=' Escriba su apellido' value={apellido} onChange={(e) => setApellido(e.target.value)} />
-          <label className={styles.label}>Email</label>
+          <label className={styles.label}>Email<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="email" name='email' required placeholder=' mail@mail.com' value={email} onChange={(e) => setEmail(e.target.value)} />
-          <label className={styles.label}>Confirme su Email</label>
+          <label className={styles.label}>Confirme su Email<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="email" name='confirmEmail' required placeholder=' mail@mail.com' value={confirmEmail} onChange={(e) => setConfirmEmail(e.target.value)} />
-          <label className={styles.label}>Telefono</label>
+          <label className={styles.label}>Telefono<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="tel" required placeholder=' 11 2222 3333' value={telefono} onChange={(e) => setTelefono(e.target.value)} />
-          <Button margin={1} colorScheme='green' type='submit' variant='solid'>Confirmar</Button>
+          <small className={styles.small}>* Campo requerido de manera obligatoria</small>
+          <Button margin={3} colorScheme='green' type='submit' variant='solid'>Confirmar</Button>
         </form>
         <Box margin={10} boxShadow='dark-lg' p='6' rounded='md' bg='white' border='4px' borderColor='#5f1e3b' borderRadius='10%'>
           <Heading margin={3} fontFamily='Ubuntu' fontSize='1.2rem' fontStyle='italic' color='#5f1e3b'>Resumen de compra:</Heading>
