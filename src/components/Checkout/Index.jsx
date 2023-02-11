@@ -39,22 +39,34 @@ const Checkout = () => {
     //agrega los datos de la variable order a la coleccion orders
     await addDoc(orderCollection, order)
       .then(({ id }) =>
-        Swal.fire({
-          icon: 'success',
-          title: 'Compra realizada con exito!',
-          text: `Su numero de orden es: ${id}`,
-          confirmButtonText: 'Aceptar',
-        })
+        validateEmail(id)
       );
     setLoading(false);
+    //condicional para mostrar loading mientras se obtienen los datos de firebase
+    if (loading) {
+      return (
+        <Box display='flex' justifyContent='center' marginTop='100' width='300'>
+          <Loading />
+        </Box>
+      )
+    }
   }
-  //condicional para mostrar loading mientras se obtienen los datos de firebase
-  if (loading) {
-    return (
-      <Box display='flex' justifyContent='center' marginTop='100' width='300'>
-        <Loading />
-      </Box>
-    )
+  const validateEmail = (id) => {
+    if (email !== confirmEmail) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Los emails no coinciden!',
+        confirmButtonText: 'Aceptar',
+      })
+    } else {
+      Swal.fire({
+        icon: 'success',
+        titleText: 'Gracias por su compra!',
+        text: `Su numero de orden es: ${id}`,
+        confirmButtonText: 'Aceptar',
+      })
+    }
   }
 
   return (
