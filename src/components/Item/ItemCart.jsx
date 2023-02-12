@@ -1,13 +1,17 @@
 import { Box, Button, Heading, Image, Text } from '@chakra-ui/react';
 import styles from './itemCart.module.css';
 import { UseCartContext } from '../../Context/CartContext';
-
+import { BsFillCartXFill } from 'react-icons/bs';
 const ItemCart = ({ item }) => {
 
-  const { eliminarProducto , borrarStorage } = UseCartContext();
+  const { eliminarProducto , borrarStorage, vaciarCarrito } = UseCartContext();
 
   return (
     <>
+    <Box display='flex' flexDirection='row' cursor='pointer' alignItems='baseline' justifyContent='end' onClick={vaciarCarrito}>
+    <Text padding={3}>Vaciar Carrito</Text>
+    <BsFillCartXFill className={styles.vaciarCarrito} />
+    </Box>
       <Box display='flex' flexDirection={{base:'column', lg:'row'}} alignItems='center' justifyContent='space-between' margin={5}>
         <Image className={styles.img} alt={item.nombre} src={item.img}></Image>
         <Box display='flex' flexDirection='column'>

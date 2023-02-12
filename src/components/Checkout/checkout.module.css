@@ -44,3 +44,7 @@ max-width: 700px;
     color: grey;
     font-style: italic;
 }
+
+.link{
+    text-decoration: none;
+}

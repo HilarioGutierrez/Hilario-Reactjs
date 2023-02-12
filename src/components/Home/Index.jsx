@@ -1,4 +1,4 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Heading, Image } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './home.module.css'
@@ -21,22 +21,20 @@ const Home = () => {
                     <span className="title-word title-word-3">WAYNA</span>
                     <span className="title-word title-word-4">Vinos</span>
                 </Heading>
-                <Box display='flex' flexDirection={{ base: 'column', md: 'row' }} justifyContent='center' flexWrap='wrap' alignItems='center'>
+                <Box display='flex' flexDirection={{ base: 'column', md: 'row' }}height='auto' justifyContent='center' flexWrap='wrap' alignItems='center'>
                     <Link to='/tintos'>
-                        <div className={styles.categoriaTinto}>
-                        </div>
+                        <Image src='https://res.cloudinary.com/dey3fcafu/image/upload/v1676081957/React%20JS/vino-tinto_nyd68k.jpg'  className={styles.categoriaTinto} />
+                        
                     </Link>
                     <Link to='/blancos'>
-                        <div className={styles.categoriaBlanco}>
-                        </div>
+                        <Image src='https://res.cloudinary.com/dey3fcafu/image/upload/v1676081956/React%20JS/vino-blanco_hzmyml.jpg' className={styles.categoriaBlanco}/>
+                            
                     </Link>
                     <Link to='/rosados'>
-                        <div className={styles.categoriaRosado}>
-                        </div>
+                        <Image src='https://res.cloudinary.com/dey3fcafu/image/upload/v1676081960/React%20JS/vino-rosado_vj1dik.jpg' className={styles.categoriaRosado}/>
                     </Link>
                     <Link to='/champagne'>
-                        <div className={styles.categoriaChampagne}>
-                        </div>
+                        <Image src='https://res.cloudinary.com/dey3fcafu/image/upload/v1676081957/React%20JS/champagne_bye1bh.jpg' className={styles.categoriaChampagne}/>
                     </Link>
                 </Box>
             </Box>

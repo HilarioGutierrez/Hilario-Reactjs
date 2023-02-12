@@ -46,7 +46,9 @@ const Rutas = () => {
     <>
       <Routes>
         <Route path='/' element={
-          <Home title="Bienvenidos a Wayna vinos" />
+          <Box>
+            <Home />
+          </Box>
         } />
 
         <Route path='/todos-los-vinos' element={

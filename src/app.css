@@ -1,227 +1,196 @@
-
-.title{
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-family: 'Unbounded', cursive;
-    color: #FFFFFC;
-    background-color:#212529 ;
-    margin: 0px;
-
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Unbounded", cursive;
+  color: #fffffc;
+  background-color: #212529;
+  margin: 0px;
 }
 
-.title2{
-    font-size: 1.3rem;
-    font-family: 'Unbounded', cursive;
-    color: #FFFFFC;
-    align-self: center;
-    text-decoration: none;
+.title2 {
+  font-size: 1.3rem;
+  font-family: "Unbounded", cursive;
+  color: #fffffc;
+  align-self: center;
+  text-decoration: none;
 }
 
-nav{
-    border-bottom:2px solid #000;
-
+nav {
+  border-bottom: 2px solid #000;
 }
-.navBar{
-    margin: 10px;
-    align-items: center;
-}
-
-.listNav{
-    padding: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    color: #FFFFFC;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
+.navBar {
+  margin: 10px;
+  align-items: center;
 }
 
-.listNav:hover{
-    transition: 0.2s;
-    color: #68B684;
-    cursor: pointer;
+.listNav {
+  padding: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fffffc;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.imgLogo{
-    width: 80px;
-list-style: none;
-margin: 10px;
+.listNav:hover {
+  transition: 0.2s;
+  color: #68b684;
+  cursor: pointer;
 }
 
-.carritoNavBar{
-    width: 38px;
-    display: flex;
-    justify-content: end;
+.imgLogo {
+  width: 80px;
+  list-style: none;
+  margin: 10px;
 }
 
-.divCarritoNav{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: auto
+.carritoNavBar {
+  width: 38px;
+  display: flex;
+  justify-content: end;
 }
 
-.carritoNotificacion{
-    width: 27px;
-    height: 27px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #68B684;
-    border:solid ;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    margin: 5px
-    ;
-
+.divCarritoNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
 }
 
-.AgregarContador{
-    margin: 0;
+.carritoNotificacion {
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68b684;
+  border: solid;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin: 5px;
 }
 
-.cardVinos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.AgregarContador {
+  margin: 0;
 }
 
-.cardIimg{
-    width: 300px;
+.cardVinos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.footer{
-    background-color: #857c8d;
-    height: 100px;
+.cardIimg {
+  width: 300px;
 }
 
-.input{
-    border: solid 1px #68b684;
-    margin-left: 10px;
-    width: 250px;
+.footer {
+  background-color: #857c8d;
+  height: 100px;
 }
 
-.labelform{
-    width: 200px;
+.input {
+  border: solid 1px #68b684;
+  margin-left: 10px;
+  width: 250px;
 }
 
-.divForm{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    align-self: center;
+.labelform {
+  width: 200px;
 }
 
-.Form{
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: baseline;
+.divForm {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-self: center;
 }
 
-.botonFrom{
-    border: solid 3px #857c8d;
-    border-radius: 10px;
-    margin: 10px;
-    align-self: center;
-    background-color: #68b684;
-    color: #FFFFFC;
-    text-align: center;
-    height: 45px;
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
 }
 
-.bienvenidos{
-    color: #fffffc;
-    text-shadow: #857d8c 5px 5px;
-    background-color: rgb(16, 0, 7, 0.2) ;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    font-weight: 100;
-    text-align: center;
-
-}
-
-.panel-dark{
-    background-color: #857c8d;
-    color: #fffffc;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.panel-light{
-    background-color: #68b684;
-    color: #fffffc;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.selected{
-    color: #68b684;
-    font-weight: bold;
+.botonFrom {
+  border: solid 3px #857c8d;
+  border-radius: 10px;
+  margin: 10px;
+  align-self: center;
+  background-color: #68b684;
+  color: #fffffc;
+  text-align: center;
+  height: 45px;
 }
 
 .title-word {
-    animation: color-animation 4s linear infinite;
-  }
-  
-  .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
-  }
-  
-  .title-word-2 {
-    --color-1: #DBAD4A;
-    --color-2: #ACCFCB;
-    --color-3: #17494D;
-  }
-  
-  .title-word-3 {
-    --color-1: #ACCFCB;
-    --color-2: #E4A9A8;
-    --color-3: #ACCFCB;
-  }
-  
-  .title-word-4 {
-    --color-1: #3D8DAE;
-    --color-2: #DF8453;
-    --color-3: #E4A9A8;
-  }
-  
-  @keyframes color-animation {
-    0%    {color: var(--color-1)}
-    32%   {color: var(--color-1)}
-    33%   {color: var(--color-2)}
-    65%   {color: var(--color-2)}
-    66%   {color: var(--color-3)}
-    99%   {color: var(--color-3)}
-    100%  {color: var(--color-1)}
-  }
-  
-  /* Here are just some visual styles. 🖌 */
-  
-  .container {
-    display: grid;
-    place-items: center;  
-    text-align: center;
-    height: 100vh
-  }
-  
-  .title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 8.5vw;
-    text-transform: uppercase;
-  }
+  animation: color-animation 4s linear infinite;
+}
 
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+}
+
+.title-word-3 {
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
+}
+
+.title-word-4 {
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
