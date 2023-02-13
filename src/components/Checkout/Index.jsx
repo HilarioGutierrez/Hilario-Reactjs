@@ -91,8 +91,9 @@ const Checkout = () => {
             position: 'bottom',
           })
           setTimeout(() => {
-            window.location.href = '/todos-los-vinos'
-          }, 4000)
+            location.assign("https://hilariogutierrez.github.io/Hilario-Reactjs/")
+            window.location.reload()
+          }, 3000)
         }}>
           <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='nombre' required placeholder=' Escriba su nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
