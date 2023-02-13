@@ -76,6 +76,13 @@ const Checkout = () => {
     }
   }
 
+  const inicio=() => {
+    setTimeout(() => {
+      location="https://hilariogutierrez.github.io/"
+      location.reload(true)
+    }, 5000)
+  }
+
   return (
     <Box display='flex' flexDirection='column'>
       <Heading margin={3} fontFamily='Ubuntu' fontStyle='italic'>Datos del comprador</Heading>
@@ -90,10 +97,8 @@ const Checkout = () => {
             duration: 1500,
             position: 'bottom',
           })
-          setTimeout(() => {
-            location="https://hilariogutierrez.github.io/"
-            location.reload(true)
-          }, 5000)
+          inicio()
+          
         }}>
           <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='nombre' required placeholder=' Escriba su nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
