@@ -91,7 +91,7 @@ const Checkout = () => {
             position: 'bottom',
           })
           setTimeout(() => {
-            window.location.href = '/'
+            window.location.href = '/todos-los-vinos'
           }, 4000)
         }}>
           <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
