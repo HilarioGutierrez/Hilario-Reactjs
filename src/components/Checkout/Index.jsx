@@ -71,7 +71,6 @@ const Checkout = () => {
       .then((result) => {
         if (result.isConfirmed) {
           setCarrito([])
-          return <Navigate to='/' />
         }
       })
       setNombre('')
