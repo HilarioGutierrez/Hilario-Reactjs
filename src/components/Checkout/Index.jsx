@@ -88,8 +88,11 @@ const Checkout = () => {
             description: 'Su orden esta siendo procesada',
             status: 'success',
             duration: 1500,
-            position:'bottom',
+            position: 'bottom',
           })
+          setTimeout(() => {
+            window.location.href = '/'
+          }, 4000)
         }}>
           <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='nombre' required placeholder=' Escriba su nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />
