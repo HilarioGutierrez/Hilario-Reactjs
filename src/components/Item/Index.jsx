@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, Image, Text, Toast } from '@chakra-ui/react'
+import { Box, Button, Container, Heading, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Item.module.css'
@@ -13,16 +13,15 @@ const Item = ({ productos }) => {
 
   const onAdd = () => {
     agregarProducto(productos, 1)
-    console.log(`Seleccionaste: ${1} unidades`);
     toast({
       title: 'Agregado al carrito!',
-          description: `Has agregado ${1} unidades de ${productos.nombre} al carrito`,
-          status: 'success',
-          duration: 2500,
-          position:'top-right',
-          isClosable: true,
+      description: `Has agregado ${1} unidades de ${productos.nombre} al carrito`,
+      status: 'success',
+      duration: 2500,
+      position: 'top-right',
+      isClosable: true,
     })
-    
+
   }
   return (
     <Box marginBottom='20'>

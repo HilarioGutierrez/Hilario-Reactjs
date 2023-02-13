@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  flex-wrap: wrap;
   font-family: "Unbounded", cursive;
   color: #fffffc;
   background-color: #212529;
@@ -193,4 +193,24 @@ nav {
   font-weight: 800;
   font-size: 5rem;
   text-transform: uppercase;
+}
+
+.buscador{
+  width: 200px;
+  height: 30px;
+  border: solid 1px #68b684;
+  margin-left: 10px;
+  margin: 20px;
+  
+}
+
+.botonBuscador{
+  border: solid 3px #857c8d;
+  border-radius: 10px;
+  margin: 10px;
+  align-self: center;
+  background-color: #68b684;
+  color: #fffffc;
+  text-align: center;
+  height: 45px;
 }

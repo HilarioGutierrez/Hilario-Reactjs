@@ -6,7 +6,7 @@ import { UseCartContext } from '../../Context/CartContext'
 import styles from './checkout.module.css'
 import ItemCheckout from './ItemCheckout'
 import { useToast } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 const Checkout = () => {
   const toast = useToast()
@@ -63,24 +63,24 @@ const Checkout = () => {
         iconColor: '68b684',
         titleText: 'Gracias por su compra!',
         text: `Su numero de orden es: ${id}`,
+        showConfirmButton: true,
         confirmButtonColor: '#5f1e3b',
-        confirmButtonText: 'Aceptar',
+        confirmButtonText: 'Ir a inicio',
         background: '#f5f5f5',
+      })
+      .then((result) => {
+        if (result.isConfirmed) {
+          setCarrito([])
+          return <Navigate to='/' />
+        }
       })
       setNombre('')
       setApellido('')
       setEmail('')
       setConfirmEmail('')
       setTelefono('')
-      setCarrito([])
-    }
-  }
 
-  const inicio=() => {
-    setTimeout(() => {
-      location="https://hilariogutierrez.github.io/"
-      location.reload(true)
-    }, 5000)
+    }
   }
 
   return (
@@ -97,8 +97,7 @@ const Checkout = () => {
             duration: 1500,
             position: 'bottom',
           })
-          inicio()
-          
+
         }}>
           <label className={styles.label}>Nombre<span className={styles.requerido}>*</span></label>
           <input className={styles.input} type="text" name='nombre' required placeholder=' Escriba su nombre' value={nombre} onChange={(e) => setNombre(e.target.value)} />

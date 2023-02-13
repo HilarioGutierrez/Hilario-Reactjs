@@ -8,10 +8,11 @@ import CartWidget from "../CartWidget/Index";
 const Navbar = () => {
   return (
     <header>
-      {/* Brand */}
-      <Link to='/' className="linkDecoration">
-        <h1 className="title">WAYNA<span className="title2">vinos</span></h1>
-      </Link>
+      <Box display='flex' bg='#212529' flexDirection={{base:'column', lg:'row'}} justifyContent='space-evenly' alignItems='center'>
+        <Link to='/' className="linkDecoration">
+          <h1 className="title">WAYNA<span className="title2">vinos</span></h1>
+        </Link>
+      </Box>
       {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg bg-dark">
         {/* NavBar boton responsive */}
@@ -20,7 +21,7 @@ const Navbar = () => {
             <Text className="navbar-toggler-icon m-0"></Text>
           </Button>
           {/* NavBar List / Categorys */}
-          <Box className="collapse navbar-collapse" id="navbarNavAltMarkup" display='felx'justifyContent='space-evenly' flexDirection={{base:'column',lg:'row'}}>
+          <Box className="collapse navbar-collapse" id="navbarNavAltMarkup" display='felx' justifyContent='space-evenly' flexDirection={{ base: 'column', lg: 'row' }}>
             <NavLink to='/todos-los-vinos' className="listNav">Todos los Vinos</NavLink>
             <NavLink to='/tintos' className="listNav">Tintos</NavLink>
             <NavLink to='/blancos' className="listNav">Blancos</NavLink>
