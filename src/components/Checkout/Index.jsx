@@ -42,7 +42,7 @@ const Checkout = () => {
       .then(({ id }) =>
         validateEmail(id),
         setTimeout(() => {
-          window.location.assign('/')
+          window.location.assign('hilariogutierrez.github.io/Hilario-Reactjs/')
         }, 4000)
       )
   }
