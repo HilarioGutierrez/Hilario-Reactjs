@@ -29,8 +29,8 @@ const Navbar = () => {
             <NavLink to='/champagne' className="listNav">Champagne</NavLink>
             <NavLink to='/contacto' className="listNav">Contacto</NavLink>
             {/* Cart */}
-            <NavLink className="linkDecoration" to='carrito' background='dark' _hover={{ background: 'dark' }}><CartWidget /></NavLink>
           </Box>
+            <NavLink className="linkDecoration" to='carrito' background='dark' _hover={{ background: 'dark' }}><CartWidget /></NavLink>
         </Box>
 
       </nav>

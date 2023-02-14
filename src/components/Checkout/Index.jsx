@@ -41,6 +41,9 @@ const Checkout = () => {
     await addDoc(orderCollection, order)
       .then(({ id }) =>
         validateEmail(id),
+        setTimeout(() => {
+          window.location.assign('/')
+        }, 4000)
       )
   }
 
@@ -80,6 +83,10 @@ const Checkout = () => {
       setTelefono('')
 
     }
+  }
+
+  const vueltaInicio = () => {
+
   }
 
   return (
