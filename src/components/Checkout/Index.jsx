@@ -85,9 +85,6 @@ const Checkout = () => {
     }
   }
 
-  const vueltaInicio = () => {
-
-  }
 
   return (
     <Box display='flex' flexDirection='column'>
