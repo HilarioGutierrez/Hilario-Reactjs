@@ -32,7 +32,7 @@ npm run dev
 
 _Las herramientas que se utilizaron para realizar el proyecto fueron:_
 
-* [VITE](https://vitejs.dev/) - El framework web usado
+* [VITE](https://vitejs.dev/) - App creada con vite
 * [CHAKRA UI](https://chakra-ui.com/) - Libreria de estilos
 * [REACT ICON](https://react-icons.github.io/react-icons/) - Iconos
 * [SWEET ALERT 2](https://sweetalert2.github.io/) - Alerts
